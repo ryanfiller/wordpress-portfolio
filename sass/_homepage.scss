@@ -13,10 +13,24 @@
         display: block;
         width: 25vw;
         height: auto;
+        filter: drop-shadow( 0 0 10px $dark-gray );
+        transition: 1s;
 
         path, polygon {
             fill: $white;
         }
-    }
 
+            &:hover {
+                width: 30vw;
+                filter: blur(10px);
+
+                path, polygon {
+                    fill: $secondary-color;
+                }
+            }
+
+        @include tablet-break {
+            width: 50vw;
+        }
+    }
 }

@@ -200,6 +200,19 @@ body {
   .homepage .homepage__logo {
     display: block;
     width: 25vw;
-    height: auto; }
+    height: auto;
+    -webkit-filter: drop-shadow(0 0 10px #212324);
+            filter: drop-shadow(0 0 10px #212324);
+    -webkit-transition: 1s;
+    transition: 1s; }
     .homepage .homepage__logo path, .homepage .homepage__logo polygon {
       fill: #ffffff; }
+    .homepage .homepage__logo:hover {
+      width: 30vw;
+      -webkit-filter: blur(10px);
+              filter: blur(10px); }
+      .homepage .homepage__logo:hover path, .homepage .homepage__logo:hover polygon {
+        fill: #f89c7d; }
+    @media only screen and (max-width: 768px) {
+      .homepage .homepage__logo {
+        width: 50vw; } }
