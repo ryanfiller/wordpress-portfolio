@@ -1,1 +1,15 @@
-@import "normalize";
+/* Globals */
+* {
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+/* Config */
+@import "config/colors";
+@import "config/typography";
+@import "config/layout";
+
+/* Components */
+@import "components/header";
+@import "components/footer";
+@import "components/social";

@@ -1,0 +1,17 @@
+<footer class="footer">
+    <aside class="footer--pre">
+        <div class="grid grid--container">
+            {% include "components/menu.twig" with {'menu': menu.get_items} %}
+        </div>
+    </aside>
+    <main class="grid grid--container footer--main">
+        footer
+    </main>
+    <aside class="footer--post">
+        <div class="grid grid--container">
+            <span class="footer__legal">
+                Copyright {{"now"|date('Y')}}
+            </span>
+        </div>
+    </aside>
+</footer>

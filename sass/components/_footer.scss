@@ -1,0 +1,49 @@
+.footer {
+        background: $light-gray;
+
+    .footer--pre {
+        background: $gray;
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            width: 100%;
+
+            .nav__link {
+                flex: 1;
+
+                a {
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    padding-top: .5em;
+                    padding-bottom: .5em;
+                    @include secondary-font;
+
+                    &:hover {
+                        background: $dark-gray;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer--main {
+        text-align: center;
+        color: $white;
+    }
+
+    .footer--post {
+        background: $dark-gray;
+        color: $white;
+        padding-top: .5em;
+        padding-bottom: .5em;
+
+        .footer__legal {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.header {
+    .header--pre {
+        background: $black;
+    }
+
+    .header--main {
+        border-bottom: 5px solid $primary-color;
+
+        .grid {
+            justify-content: space-between;
+
+            .header__logo {
+                display: flex;
+                align-items: center;
+                margin: 1em;
+
+                .header__logo__image {
+                    height: 100px;
+                    width: auto;
+                    path, polygon {
+                        fill: $black;
+                    }
+
+                    &:hover {
+                        path, polygon {
+                            fill: $light-gray;
+                        }
+                    }
+                }
+            }
+
+            .nav {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                    .nav__link a {
+                        text-decoration: none;
+                        margin-left: .75em;
+                    }
+            }
+        }
+    }
+
+    .header--post {
+
+    }
+}

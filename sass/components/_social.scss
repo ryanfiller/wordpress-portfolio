@@ -1,0 +1,33 @@
+.socials {
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    li {
+        list-style: none;
+
+        .social {
+            display: block;
+
+            svg {
+                fill: $white;
+                display: block;
+                width: 30px;
+                height: 30px;
+
+                .up { display: none; }
+            }
+
+            &:hover svg {
+                fill: $secondary-color;
+            }
+        }
+
+        &:nth-child(even) svg {
+            .up { display: block; }
+            .down { display: none; }
+        }
+    }
+}

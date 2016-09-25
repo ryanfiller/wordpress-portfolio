@@ -1,0 +1,152 @@
+/* Globals */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,700");
+* {
+  -webkit-transition: .2s;
+  transition: .2s;
+  box-sizing: border-box; }
+
+/* Config */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.header .nav__link a {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #1b2021; }
+  .header .nav__link a:hover {
+    color: #697175; }
+
+.footer .nav__link a {
+  color: #ffffff;
+  font-size: 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.footer .footer__legal {
+  font-family: 'Dosis', sans-serif;
+  font-size: .9em; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.grid--container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* Components */
+.header .header--pre {
+  background: #1b2021; }
+
+.header .header--main {
+  border-bottom: 5px solid #3f7cac; }
+  .header .header--main .grid {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header .header--main .grid .header__logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 1em; }
+      .header .header--main .grid .header__logo .header__logo__image {
+        height: 100px;
+        width: auto; }
+        .header .header--main .grid .header__logo .header__logo__image path, .header .header--main .grid .header__logo .header__logo__image polygon {
+          fill: #1b2021; }
+        .header .header--main .grid .header__logo .header__logo__image:hover path, .header .header--main .grid .header__logo .header__logo__image:hover polygon {
+          fill: #697175; }
+    .header .header--main .grid .nav {
+      list-style: none;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header .header--main .grid .nav .nav__link a {
+        text-decoration: none;
+        margin-left: .75em; }
+
+.footer {
+  background: #697175; }
+  .footer .footer--pre {
+    background: #393d3f; }
+    .footer .footer--pre .nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .footer .footer--pre .nav .nav__link {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+        .footer .footer--pre .nav .nav__link a {
+          text-align: center;
+          display: block;
+          width: 100%;
+          padding-top: .5em;
+          padding-bottom: .5em;
+          font-family: 'Dosis', sans-serif; }
+          .footer .footer--pre .nav .nav__link a:hover {
+            background: #212324; }
+  .footer .footer--main {
+    text-align: center;
+    color: #ffffff; }
+  .footer .footer--post {
+    background: #212324;
+    color: #ffffff;
+    padding-top: .5em;
+    padding-bottom: .5em; }
+    .footer .footer--post .footer__legal {
+      width: 100%;
+      text-align: center; }
+
+.socials {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .socials li {
+    list-style: none; }
+    .socials li .social {
+      display: block; }
+      .socials li .social svg {
+        fill: #ffffff;
+        display: block;
+        width: 30px;
+        height: 30px; }
+        .socials li .social svg .up {
+          display: none; }
+      .socials li .social:hover svg {
+        fill: #f89c7d; }
+    .socials li:nth-child(even) svg .up {
+      display: block; }
+    .socials li:nth-child(even) svg .down {
+      display: none; }
