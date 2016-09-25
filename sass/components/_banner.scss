@@ -1,0 +1,26 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        background: $dark-gray;
+        opacity: .5;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: 1;
+    }
+
+    .grid {
+        justify-content: center;
+
+        .banner__header {
+            margin: 0;
+            z-index: 2;
+        }
+    }
+}
