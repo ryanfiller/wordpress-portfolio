@@ -1,0 +1,22 @@
+.homepage {
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    &.grid {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage__logo {
+        display: block;
+        width: 25vw;
+        height: auto;
+
+        path, polygon {
+            fill: $white;
+        }
+    }
+
+}
