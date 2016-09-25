@@ -20,6 +20,13 @@ body {
   .header .nav__link a:hover {
     color: #697175; }
 
+.banner .banner__header {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #ffffff; }
+
 .footer .nav__link a {
   color: #ffffff;
   font-size: 1.25em;
@@ -48,6 +55,32 @@ body {
   padding-right: 20px; }
 
 /* Components */
+.socials {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .socials li {
+    list-style: none; }
+    .socials li .social {
+      display: block; }
+      .socials li .social svg {
+        fill: #ffffff;
+        display: block;
+        width: 30px;
+        height: 30px; }
+        .socials li .social svg .up {
+          display: none; }
+      .socials li .social:hover svg {
+        fill: #f89c7d; }
+    .socials li:nth-child(even) svg .up {
+      display: block; }
+    .socials li:nth-child(even) svg .down {
+      display: none; }
+
 .header .header--pre {
   background: #1b2021; }
 
@@ -88,6 +121,31 @@ body {
         text-decoration: none;
         margin-left: .75em; }
 
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  position: relative; }
+  .banner::after {
+    content: '';
+    display: block;
+    background: #212324;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .banner .grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .banner .grid .banner__header {
+      margin: 0;
+      z-index: 2; }
+
 .footer {
   background: #697175; }
   .footer .footer--pre {
@@ -124,29 +182,3 @@ body {
     .footer .footer--post .footer__legal {
       width: 100%;
       text-align: center; }
-
-.socials {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .socials li {
-    list-style: none; }
-    .socials li .social {
-      display: block; }
-      .socials li .social svg {
-        fill: #ffffff;
-        display: block;
-        width: 30px;
-        height: 30px; }
-        .socials li .social svg .up {
-          display: none; }
-      .socials li .social:hover svg {
-        fill: #f89c7d; }
-    .socials li:nth-child(even) svg .up {
-      display: block; }
-    .socials li:nth-child(even) svg .down {
-      display: none; }
