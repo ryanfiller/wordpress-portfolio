@@ -15,17 +15,27 @@ body {
 }
 
 .header {
-    .nav__link a {
-        @include secondary-font;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 1.5em;
-        color: $black;
+    .nav__link {
+        a {
+            @include secondary-font;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            color: $black;
 
-        &:hover {
-            color: $light-gray;
+                &:hover {
+                    color: $light-gray;
+                }
+            }
         }
-    }
+
+        &.current-menu-item a {
+            color: $secondary-color;
+        }
+
+        &.current-page-ancestor a {
+            color: $secondary-color;
+        }
 }
 
 .banner {
