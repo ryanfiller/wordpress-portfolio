@@ -1,0 +1,11 @@
+{% block header %}
+    {% include 'components/header.twig' %}
+{% endblock %}
+
+{% block banner %}
+    <section class="banner" style="background-image: url('{{post.thumbnail}}');">
+        <div class="grid grid--container">
+            <h1 class="banner__header">Blog</h1>
+        </div>
+    </section>
+{% endblock %}
