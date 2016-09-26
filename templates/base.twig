@@ -25,7 +25,9 @@
 
 		{% block header %}
 			{% include 'components/header.twig' %}
-			{% include 'components/banner.twig' %}
+			<section class="banner {% block bannertype %}{% endblock %}" style="background-image: url('{{post.thumbnail}}');">
+				{% include 'components/banner.twig' %}
+			</section>
 		{% endblock %}
 
 		<main class="main {% block grid %}grid{% endblock %}">

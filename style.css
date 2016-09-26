@@ -210,6 +210,13 @@ body {
       margin: 0;
       z-index: 2; }
 
+.banner--tall {
+  padding-bottom: 13.5em;
+  margin-bottom: -12em; }
+  .banner--tall + .main {
+    background: #ffffff;
+    z-index: 1; }
+
 .footer {
   background: #697175; }
   .footer .footer--pre {

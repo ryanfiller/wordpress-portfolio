@@ -24,3 +24,13 @@
         }
     }
 }
+
+.banner--tall {
+    padding-bottom: 13.5em;
+    margin-bottom: -12em;
+
+    & + .main {
+        background: $white;
+        z-index: 1;
+    }
+}
