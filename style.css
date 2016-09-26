@@ -13,7 +13,7 @@ body {
 
 .header .nav__link a {
   font-family: 'Dosis', sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 1.5em;
   color: #1b2021; }
@@ -31,21 +31,22 @@ body {
   font-size: 1.25em;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: 300; }
 
 .banner .banner__header {
   font-family: 'Dosis', sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 6em;
+  letter-spacing: .025em;
   color: #ffffff; }
 
 .footer .nav__link a {
   color: #ffffff;
-  font-size: 1.25em;
+  font-size: 2em;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: 300; }
 
 .footer .footer__legal {
   font-family: 'Dosis', sans-serif;
@@ -79,15 +80,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
 
 .grid--container {
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
 
 /* Components */
 .socials {
@@ -188,8 +189,8 @@ body {
 .banner {
   background-size: cover;
   background-position: center;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   position: relative; }
   .banner::after {
     content: '';
@@ -211,8 +212,8 @@ body {
       z-index: 2; }
 
 .banner--tall {
-  padding-bottom: 13.5em;
-  margin-bottom: -12em; }
+  padding-bottom: calc(2.5em + 10em);
+  margin-bottom: -10em; }
   .banner--tall + .main {
     background: #ffffff;
     z-index: 1; }

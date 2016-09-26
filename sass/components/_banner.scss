@@ -1,8 +1,10 @@
+$banner-padding: 2.5em;
+
 .banner {
     background-size: cover;
     background-position: center;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: $banner-padding;
+    padding-bottom: $banner-padding;
     position: relative;
 
     &::after {
@@ -26,8 +28,8 @@
 }
 
 .banner--tall {
-    padding-bottom: 13.5em;
-    margin-bottom: -12em;
+    padding-bottom: calc(#{$banner-padding} + 10em);
+    margin-bottom: -10em;
 
     & + .main {
         background: $white;

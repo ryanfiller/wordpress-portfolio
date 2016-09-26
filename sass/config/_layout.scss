@@ -20,7 +20,7 @@ body {
 }
 
 $container-width: 950px;
-$gutter: 20px;
+$gutter: 1.5em;
 
 @mixin container() {
     max-width: 950px;
