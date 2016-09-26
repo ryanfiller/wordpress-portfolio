@@ -3,7 +3,7 @@
         {% include "components/socials.twig" %}
     </div>
     <div class="header--main">
-        <div class="grid grid--container">
+        <div class="grid">
             <a href="{{site.url}}" class="header__logo">
                 <svg class="header__logo__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 viewBox="0 0 93.4 81" style="enable-background:new 0 0 93.4 81;" xml:space="preserve">
@@ -91,5 +91,6 @@
         </div>
     </div>
     <div class="header--post">
+            {% include "components/subnav.twig" with {'subnav': item.get_children} %}
     </div>
 </header>

@@ -27,14 +27,24 @@ body {
                     color: $light-gray;
                 }
             }
+
+            &.current-menu-item a {
+                color: $secondary-color;
+            }
+
+            &.current-page-ancestor a {
+                color: $secondary-color;
+            }
         }
 
-        &.current-menu-item a {
-            color: $secondary-color;
-        }
-
-        &.current-page-ancestor a {
-            color: $secondary-color;
+        .subnav__link {
+            a {
+                color: $white;
+                font-size: 1.25em;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
         }
 }
 

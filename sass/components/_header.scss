@@ -1,10 +1,11 @@
 .header {
+    border-bottom: 5px solid $primary-color;
+
     .header--pre {
         background: $black;
     }
 
     .header--main {
-        border-bottom: 5px solid $primary-color;
 
         .grid {
             justify-content: space-between;
@@ -45,6 +46,5 @@
     }
 
     .header--post {
-
     }
 }

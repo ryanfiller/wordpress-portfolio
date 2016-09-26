@@ -1,0 +1,28 @@
+.subnav {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .subnav__link {
+        flex: 1;
+
+        a {
+            color: $white;
+            background: $light-gray;
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            @include secondary-font;
+
+            &:hover {
+                background: $secondary-color;
+            }
+        }
+    }
+}
