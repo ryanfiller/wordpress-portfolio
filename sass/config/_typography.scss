@@ -94,18 +94,22 @@ h4 {
 }
 
 .excerpt {
-    .excerpt__header {
+
+    .excerpt__title {
         @include header-font;
         text-decoration: none;
         font-size: 2em;
+        color: $white;
 
         a {
             @include text-link;
         }
     }
 
-    .excerpt__date {
+    .excerpt__meta {
         font-size: .8em;
+        color: $white;
+        font-weight: bold;
     }
 
     .excerpt__link {

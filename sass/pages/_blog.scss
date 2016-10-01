@@ -15,38 +15,74 @@
             .excerpt__block-link {
                 text-decoration: none;
                 color: inherit;
+                display: block;
+
+                .excerpt__header {
+                    padding: (5*$margin) $margin ($margin/2) $margin;
+                    margin-bottom: $margin;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        background: $primary-color;
+                        opacity: .5;
+                        position: absolute;
+                        top: 0; right: 0; bottom: 0; left: 0;
+                        z-index: 1;
+                    }
+
+                    .excerpt__meta {
+                        margin-bottom: 0;
+                        position: relative;
+                        z-index: 4;
+                        text-shadow: $shadow;
+                    }
+
+                    .excerpt__title {
+                        position: relative;
+                        z-index: 5;
+                        margin-bottom: 0;
+                        text-shadow: $shadow;
+                    }
+                }
+
+                .excerpt__body {
+                    padding: 0 $margin  $margin $margin;
+
+                    p.excerpt__text {
+                        margin-bottom: ($margin/2);
+                    }
+
+                    .excerpt__link {
+                        text-decoration: none;
+
+                        &::after{
+                            content: ' ▸▸';
+                        }
+                    }
+                }
 
                 &:hover {
                     position: relative;
                     top: -3px;
+                    box-shadow: $shadow;
 
-                    .excerpt__header, .excerpt__link {
+                    .excerpt__title, .excerpt__link {
                         color: $secondary-color;
                     }
-                }
 
-                .excerpt__image {
-                    width: 100%;
-                    margin-bottom: ($margin/4);
-                }
+                    .excerpt__header {
+                        .excerpt__title {
+                            color: $white;
+                        }
 
-                .excerpt__header {
-                    margin-bottom: ($margin/4);
-                }
-
-                .excerpt__date {
-                    margin-bottom: ($margin/2);
-                }
-
-                p.excerpt__body {
-                    margin-bottom: ($margin/2);
-                }
-
-                .excerpt__link {
-                    text-decoration: none;
-
-                    &::after{
-                        content: ' ▸▸';
+                        &::before {
+                            background: $secondary-color;
+                        }
                     }
                 }
             }

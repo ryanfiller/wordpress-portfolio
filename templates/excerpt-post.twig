@@ -1,11 +1,12 @@
 {% extends "excerpt.twig" %}
 
 {% block content %}
-		{% if post.thumbnail.src %}
-			<img class="excerpt__image" src="{{post.thumbnail.src}}" />
-		{% endif %}
-		<h2 class="excerpt__header">{{post.title}}</h2>
-		<h4 class="excerpt__date">{{ post.post_date | date("M d, Y")}}</h4>
-		<p class="excerpt__body">{{ post.post_excerpt }}</p>
+	<div class="excerpt__header" style="background-image:url({{post.thumbnail.src}});">
+		<h2 class="excerpt__title">{{post.title}}</h2>
+		<h4 class="excerpt__meta">{{ post.post_date | date("M d, Y")}} | {{ post.terms('tags') }}</h4>
+	</div>
+	<div class="excerpt__body">
+		<p class="excerpt__text">{{ post.post_excerpt }}</p>
 		<span class="excerpt__link" href="{{post.link}}">Read More</span>
+	</div>
 {% endblock %}
