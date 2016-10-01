@@ -5,6 +5,7 @@ $margin: 50px;
     background: $white;
 
     article {
+        width: 100%;
         z-index: 3;
         padding: ($margin*2) 0 $margin 0;
 
@@ -15,6 +16,7 @@ $margin: 50px;
 
         p {
             padding: 0 $margin ($margin/2) $margin;
+            margin: 0;
 
             &:last-child {
                 padding-bottom:($margin*2);

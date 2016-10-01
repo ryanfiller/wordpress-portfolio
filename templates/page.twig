@@ -1,5 +1,7 @@
 {% extends "base-container.twig" %}
 
 {% block content %}
+	<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			{{post.content}}
+	</article>
 {% endblock %}

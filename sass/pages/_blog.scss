@@ -1,0 +1,29 @@
+.blog {
+    .page-content.grid {
+        flex-wrap: wrap;
+        padding-bottom: ($margin*3);
+
+        .excerpt {
+            width: 50%;
+            padding-bottom: 0;
+
+            @include tablet-break {
+                width: 100%;
+            }
+
+            p {
+                padding-bottom: 0;
+
+                a {
+                    display: block;
+                    margin-top: ($margin/2);
+                }
+            }
+
+            .excerpt__image {
+                width: 100%;
+                margin-bottom: ($margin/2);
+            }
+        }
+    }
+}
