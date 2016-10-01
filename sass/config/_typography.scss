@@ -8,6 +8,7 @@
 
 @mixin header-font() {
     font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
 
 @mixin nav-font() {
@@ -29,6 +30,11 @@
 body {
     @include body-font;
     font-size: 16px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 2em;
 }
 
 h2 {
