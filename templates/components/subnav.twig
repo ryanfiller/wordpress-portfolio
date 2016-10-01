@@ -1,9 +1,13 @@
+<!-- <pre>{{dump(menu.items)}}</pre> -->
 {% if menu %}
     <ul class="subnav grid">
-        {% if item.get_children %}
-            {% for child in item.get_children %}
-                <li class="subnav__link"><a href="{{child.get_link}}">{{child.title}}</a></li>
-            {% endfor %}
-        {% endif %}
+        {% for item in menu %}
+            {% include "components/menu.twig" with {'menu': item.get_children} %}
+            {% if item.get_children %}
+                {% for child in item.get_children %}
+                    <li class="subnav__link"><a href="{{child.get_link}}">{{child.title}}</a></li>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
     </ul>
 {% endif %}
