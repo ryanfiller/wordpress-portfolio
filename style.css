@@ -273,6 +273,37 @@ body {
       text-align: center; }
 
 /* Pages */
+.page-content {
+  position: relative;
+  background: #ffffff; }
+  .page-content article {
+    z-index: 3;
+    padding: 100px 0 50px 0; }
+    .page-content article h1, .page-content article h2, .page-content article h3, .page-content article h4, .page-content article h5, .page-content article h6 {
+      margin: 0;
+      padding: 0 50px 25px 50px; }
+    .page-content article p {
+      padding: 0 50px 25px 50px; }
+      .page-content article p:last-child {
+        padding-bottom: 100px; }
+      .page-content article p .alignnone {
+        display: block;
+        width: calc(100px + 100%);
+        height: auto;
+        margin: 0 -50px 50px -50px; }
+      .page-content article p .alignleft {
+        float: left;
+        margin: 0 50px 50px -50px; }
+      .page-content article p .alignright {
+        float: right;
+        margin: 0 -50px 50px 50px; }
+      .page-content article p .aligncenter {
+        display: block;
+        margin: 0 auto; }
+
+.home article {
+  padding: 0; }
+
 .homepage {
   height: 80vh;
   width: 100%;
@@ -313,31 +344,3 @@ body {
     @media only screen and (max-width: 768px) {
       .homepage .homepage__logo {
         width: 50vw; } }
-
-.page-content {
-  position: relative;
-  background: #ffffff; }
-  .page-content article {
-    z-index: 3;
-    padding: 100px 0 50px 0; }
-    .page-content article h1, .page-content article h2, .page-content article h3, .page-content article h4, .page-content article h5, .page-content article h6 {
-      margin: 0;
-      padding: 0 50px 25px 50px; }
-    .page-content article p {
-      padding: 0 50px 25px 50px; }
-      .page-content article p:last-child {
-        padding-bottom: 100px; }
-      .page-content article p .alignnone {
-        display: block;
-        width: calc(100px + 100%);
-        height: auto;
-        margin: 0 -50px 50px -50px; }
-      .page-content article p .alignleft {
-        float: left;
-        margin: 0 50px 50px -50px; }
-      .page-content article p .alignright {
-        float: right;
-        margin: 0 -50px 50px 50px; }
-      .page-content article p .aligncenter {
-        display: block;
-        margin: 0 auto; }
