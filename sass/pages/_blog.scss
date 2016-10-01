@@ -1,5 +1,6 @@
-.blog {
+.blog, .archive {
     .page-content.grid {
+        align-content: flex-start;
         flex-wrap: wrap;
         padding-bottom: ($margin*2);
 
@@ -35,11 +36,11 @@
                         z-index: 1;
                     }
 
-                    .excerpt__meta {
-                        margin-bottom: 0;
-                        position: relative;
-                        z-index: 4;
+                    .excerpt__date {
                         text-shadow: $shadow;
+                        position: relative;
+                        z-index: 5;
+                        margin-bottom: ($margin/4);
                     }
 
                     .excerpt__title {
@@ -52,6 +53,10 @@
 
                 .excerpt__body {
                     padding: 0 $margin  $margin $margin;
+
+                    .excerpt__meta {
+                        margin-bottom: $margin;
+                    }
 
                     p.excerpt__text {
                         margin-bottom: ($margin/2);

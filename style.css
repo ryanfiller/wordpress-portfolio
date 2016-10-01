@@ -71,9 +71,17 @@ h4 {
     .excerpt .excerpt__title a:hover {
       color: #f89c7d; }
 
-.excerpt .excerpt__meta {
+.excerpt .excerpt__date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
   font-size: .8em;
   color: #ffffff;
+  font-weight: bold; }
+
+.excerpt .excerpt__tag {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: #697175;
   font-weight: bold; }
 
 .excerpt .excerpt__link {
@@ -351,29 +359,31 @@ body {
         display: block;
         margin: 0 auto; }
 
-.blog .page-content.grid {
+.blog .page-content.grid, .archive .page-content.grid {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 3em; }
-  .blog .page-content.grid .excerpt {
+  .blog .page-content.grid .excerpt, .archive .page-content.grid .excerpt {
     width: 50%;
     padding: 1.5em;
     margin-bottom: 1.5em; }
     @media only screen and (max-width: 768px) {
-      .blog .page-content.grid .excerpt {
+      .blog .page-content.grid .excerpt, .archive .page-content.grid .excerpt {
         width: 100%; } }
-    .blog .page-content.grid .excerpt .excerpt__block-link {
+    .blog .page-content.grid .excerpt .excerpt__block-link, .archive .page-content.grid .excerpt .excerpt__block-link {
       text-decoration: none;
       color: inherit;
       display: block; }
-      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header {
+      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__header {
         padding: 7.5em 1.5em 0.75em 1.5em;
         margin-bottom: 1.5em;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         position: relative; }
-        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header::before {
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header::before, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__header::before {
           content: '';
           display: block;
           background: #3f7cac;
@@ -384,33 +394,35 @@ body {
           bottom: 0;
           left: 0;
           z-index: 1; }
-        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header .excerpt__meta {
-          margin-bottom: 0;
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header .excerpt__date, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__header .excerpt__date {
+          text-shadow: 0 0 15px rgba(27, 32, 33, 0.75);
           position: relative;
-          z-index: 4;
-          text-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
-        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header .excerpt__title {
+          z-index: 5;
+          margin-bottom: 0.375em; }
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__header .excerpt__title {
           position: relative;
           z-index: 5;
           margin-bottom: 0;
           text-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
-      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body {
+      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body {
         padding: 0 1.5em 1.5em 1.5em; }
-        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body p.excerpt__text {
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__meta, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__meta {
+          margin-bottom: 1.5em; }
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body p.excerpt__text, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body p.excerpt__text {
           margin-bottom: 0.75em; }
-        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link {
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link {
           text-decoration: none; }
-          .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link::after {
+          .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link::after, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link::after {
             content: ' ▸▸'; }
-      .blog .page-content.grid .excerpt .excerpt__block-link:hover {
+      .blog .page-content.grid .excerpt .excerpt__block-link:hover, .archive .page-content.grid .excerpt .excerpt__block-link:hover {
         position: relative;
         top: -3px;
         box-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
-        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link {
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link {
           color: #f89c7d; }
-        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title {
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title {
           color: #ffffff; }
-        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before {
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before {
           background: #f89c7d; }
 
 .home article {

@@ -2,11 +2,16 @@
 
 {% block content %}
 	<div class="excerpt__header" style="background-image:url({{post.thumbnail.src}});">
+		<h4 class="excerpt__date">{{ post.post_date | date("M d, Y")}}</h4>
 		<h2 class="excerpt__title">{{post.title}}</h2>
-		<h4 class="excerpt__meta">{{ post.post_date | date("M d, Y")}} | {{ post.terms('tags') }}</h4>
 	</div>
-	<div class="excerpt__body">
+	<main class="excerpt__body">
 		<p class="excerpt__text">{{ post.post_excerpt }}</p>
+		<section class="excerpt__meta">
+			{% for item in post.tags %}
+					<span class="excerpt__tag">#{{item.title}}</span>
+			{% endfor %}
+		</section>
 		<span class="excerpt__link" href="{{post.link}}">Read More</span>
-	</div>
+	</main>
 {% endblock %}

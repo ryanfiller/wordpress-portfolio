@@ -106,9 +106,16 @@ h4 {
         }
     }
 
-    .excerpt__meta {
+    .excerpt__date {
+        @include body-font;
         font-size: .8em;
         color: $white;
+        font-weight: bold;
+    }
+
+    .excerpt__tag {
+        @include body-font;
+        color: $light-gray;
         font-weight: bold;
     }
 
