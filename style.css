@@ -66,9 +66,9 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   min-height: 100vh; }
-  body .header, body .main, body .footer {
+  body .header, body .page-content, body .footer {
     width: 100%; }
-  body .main {
+  body .page-content {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
@@ -189,10 +189,11 @@ body {
 .banner {
   background-size: cover;
   background-position: center;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-  position: relative; }
-  .banner::after {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  position: relative;
+  box-shadow: inset 0 15px 15px -15px rgba(27, 32, 33, 0.75), inset 0 -15px 15px -15px rgba(27, 32, 33, 0.75); }
+  .banner::before {
     content: '';
     display: block;
     background: #212324;
@@ -209,14 +210,28 @@ body {
             justify-content: center; }
     .banner .grid .banner__header {
       margin: 0;
-      z-index: 2; }
+      z-index: 3;
+      text-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
 
 .banner--tall {
-  padding-bottom: calc(2.5em + 10em);
+  padding-bottom: calc(4em + 10em);
   margin-bottom: -10em; }
-  .banner--tall + .main {
+  .banner--tall + .page-content {
     background: #ffffff;
-    z-index: 1; }
+    z-index: 4; }
+  .banner--tall::after {
+    content: '';
+    display: block;
+    background: #ffffff;
+    width: 950px;
+    height: 12em;
+    position: absolute;
+    right: 0;
+    bottom: -2em;
+    left: 0;
+    margin: 0 auto;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
 
 .footer {
   background: #697175; }
@@ -298,3 +313,31 @@ body {
     @media only screen and (max-width: 768px) {
       .homepage .homepage__logo {
         width: 50vw; } }
+
+.page-content {
+  position: relative;
+  background: #ffffff; }
+  .page-content article {
+    z-index: 3;
+    padding: 100px 0 50px 0; }
+    .page-content article h1, .page-content article h2, .page-content article h3, .page-content article h4, .page-content article h5, .page-content article h6 {
+      margin: 0;
+      padding: 0 50px 25px 50px; }
+    .page-content article p {
+      padding: 0 50px 25px 50px; }
+      .page-content article p:last-child {
+        padding-bottom: 100px; }
+      .page-content article p .alignnone {
+        display: block;
+        width: calc(100px + 100%);
+        height: auto;
+        margin: 0 -50px 50px -50px; }
+      .page-content article p .alignleft {
+        float: left;
+        margin: 0 50px 50px -50px; }
+      .page-content article p .alignright {
+        float: right;
+        margin: 0 -50px 50px 50px; }
+      .page-content article p .aligncenter {
+        display: block;
+        margin: 0 auto; }

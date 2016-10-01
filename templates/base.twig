@@ -33,17 +33,11 @@
 			</section>
 		{% endblock %}
 
-		<main class="main {% block grid %}grid{% endblock %}">
-			{% block content %}
-					<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-						<section class="article-content">
-							<h1 class="article-h1">{{post.title}}</h1>
-							<div class="article-body">
-								{{post.content}}
-							</div>
-						</section>
-					</article>
-			{% endblock %}
+		<main class="page-content {% block grid %}grid{% endblock %}"><!-- class="post-type-{{post.post_type}}" id="post-{{post.ID}}" -->
+			<article>
+				{% block content %}
+				{% endblock %}
+			</article>
 		</main>
 
 		{% block footer %}

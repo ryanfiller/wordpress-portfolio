@@ -5,3 +5,5 @@ $black: #1b2021;
 $gray: #393d3f;
 $light-gray: lighten($gray, 20%);
 $dark-gray: darken($gray, 10%);
+
+$shadow: 0 0 15px transparentize($black, .25);

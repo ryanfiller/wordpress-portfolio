@@ -6,11 +6,11 @@ body {
     align-items: stretch;
     min-height: 100vh;
 
-    .header, .main, .footer {
+    .header, .page-content, .footer {
         width: 100%;
     }
 
-    .main {
+    .page-content {
         flex: 1;
     }
 
