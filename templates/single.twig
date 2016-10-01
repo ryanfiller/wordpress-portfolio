@@ -13,10 +13,11 @@
 		<section class="meta">
 			 <span class="meta__date">{{ post.post_date | date("M d, Y")}}</span>
 			 {% for item in post.terms %}
- 					<span class="tag">#{{item.title}}</span>
+ 					<span class="tag"><b>#</b>{{item.title}}</span>
  			{% endfor %}
 		</section>
 			{{post.content}}
+			<a class="back__blog" href="">Back to all posts</a>
 	</article>
 	<!-- {% include 'components/comments.twig' %}
 {% endblock %}

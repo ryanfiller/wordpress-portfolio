@@ -64,10 +64,6 @@
 
                     .excerpt__link {
                         text-decoration: none;
-
-                        &::after{
-                            content: ' ▸▸';
-                        }
                     }
                 }
 
@@ -108,5 +104,10 @@
         .tag {
             padding: 0 .25em;
         }
+    }
+
+    .back__blog {
+        display: block;
+        text-align: center;
     }
 }

@@ -89,8 +89,7 @@ h4 {
 .excerpt .excerpt__tag {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  color: #697175;
-  font-weight: bold; }
+  color: #697175; }
 
 .excerpt .excerpt__link {
   color: #3f7cac;
@@ -107,6 +106,23 @@ h4 {
 
 .single .meta {
   color: #697175; }
+  .single .meta .meta__date {
+    font-weight: bold; }
+
+.single .back__blog {
+  color: #3f7cac;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 auto; }
+  .single .back__blog:hover {
+    color: #f89c7d; }
+  .single .back__blog::before {
+    font-size: 1.5em;
+    content: '◂◂ '; }
 
 .footer .nav__link a {
   font-family: 'Dosis', sans-serif;
@@ -425,8 +441,6 @@ body {
           margin-bottom: 0.75em; }
         .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link {
           text-decoration: none; }
-          .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link::after, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link::after {
-            content: ' ▸▸'; }
       .blog .page-content.grid .excerpt .excerpt__block-link:hover, .archive .page-content.grid .excerpt .excerpt__block-link:hover {
         position: relative;
         top: -3px;
@@ -467,6 +481,10 @@ body {
       margin-left: .5em; }
   .single .meta .tag {
     padding: 0 .25em; }
+
+.single .back__blog {
+  display: block;
+  text-align: center; }
 
 .home article {
   padding: 0; }

@@ -142,7 +142,6 @@ h4 {
     .excerpt__tag {
         @include body-font;
         color: $light-gray;
-        font-weight: bold;
     }
 
     .excerpt__link {
@@ -159,6 +158,21 @@ h4 {
 .single {
     .meta {
         color: $light-gray;
+        .meta__date {
+            font-weight: bold;
+        }
+    }
+
+    .back__blog {
+        @include text-link;
+        @include nav-font;
+        font-size: 1.5em;
+        margin: 0 auto;
+
+        &::before{
+            font-size: 1.5em;
+            content: '◂◂ ';
+        }
     }
 }
 
