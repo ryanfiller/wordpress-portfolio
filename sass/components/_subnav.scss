@@ -18,7 +18,7 @@
             width: 100%;
             padding-top: .5em;
             padding-bottom: .5em;
-            @include secondary-font;
+            @include header-font;
 
             &:hover {
                 background: $secondary-color;

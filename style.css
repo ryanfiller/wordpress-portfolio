@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Globals */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,700");
@@ -9,12 +10,30 @@
 /* Config */
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
   font-size: 16px; }
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #3f7cac;
+  font-size: 4em; }
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color: #697175;
+  font-size: 3em; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: #393d3f;
+  font-size: 1.125em; }
 
 .header .nav__link a {
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 1.5em;
   color: #1b2021; }
   .header .nav__link a:hover {
@@ -26,14 +45,14 @@ body {
 .header .nav__link.current-page-ancestor a {
   color: #f89c7d; }
 
+.header .nav__link.current_page_parent a {
+  color: #f89c7d; }
+
 .header .subnav__link a {
   color: #ffffff;
-  font-size: 1.25em;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 300; }
+  font-size: 1.25em; }
 
-.banner .banner__header {
+.banner h1.banner__header {
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -41,12 +60,36 @@ body {
   letter-spacing: .025em;
   color: #ffffff; }
 
-.footer .nav__link a {
-  color: #ffffff;
-  font-size: 2em;
+.excerpt .excerpt__header {
+  font-family: 'Dosis', sans-serif;
   text-decoration: none;
+  font-size: 2em; }
+  .excerpt .excerpt__header a {
+    color: #3f7cac;
+    text-decoration: none; }
+    .excerpt .excerpt__header a:hover {
+      color: #f89c7d; }
+
+.excerpt .excerpt__body a {
+  color: #3f7cac;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
-  font-weight: 300; }
+  text-decoration: none;
+  font-size: 1.5em; }
+  .excerpt .excerpt__body a:hover {
+    color: #f89c7d; }
+  .excerpt .excerpt__body a::after {
+    content: ' ▸▸'; }
+
+.footer .nav__link a {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2em; }
 
 .footer .footer__legal {
   font-family: 'Dosis', sans-serif;
@@ -256,8 +299,7 @@ body {
             display: block;
             width: 100%;
             padding-top: .5em;
-            padding-bottom: .5em;
-            font-family: 'Dosis', sans-serif; }
+            padding-bottom: .5em; }
             .footer .footer--pre .grid .nav .nav__link a:hover {
               background: #212324; }
   .footer .footer--main {
@@ -275,19 +317,19 @@ body {
 /* Pages */
 .page-content {
   position: relative;
-  background: #ffffff; }
+  background: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 100px; }
   .page-content article {
     width: 100%;
     z-index: 3;
-    padding: 100px 0 50px 0; }
+    padding: 0 50px 25px 50px; }
     .page-content article h1, .page-content article h2, .page-content article h3, .page-content article h4, .page-content article h5, .page-content article h6 {
       margin: 0;
-      padding: 0 50px 25px 50px; }
+      margin-bottom: 50px; }
     .page-content article p {
-      padding: 0 50px 25px 50px;
-      margin: 0; }
-      .page-content article p:last-child {
-        padding-bottom: 100px; }
+      margin: 0;
+      margin-bottom: 50px; }
       .page-content article p .alignnone {
         display: block;
         width: calc(100px + 100%);
@@ -306,21 +348,27 @@ body {
 .blog .page-content.grid {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 150px; }
+  padding-bottom: 100px; }
   .blog .page-content.grid .excerpt {
     width: 50%;
-    padding-bottom: 0; }
+    padding: 0 50px 50px 50px; }
     @media only screen and (max-width: 768px) {
       .blog .page-content.grid .excerpt {
         width: 100%; } }
-    .blog .page-content.grid .excerpt p {
-      padding-bottom: 0; }
-      .blog .page-content.grid .excerpt p a {
-        display: block;
-        margin-top: 25px; }
     .blog .page-content.grid .excerpt .excerpt__image {
       width: 100%;
+      margin-bottom: 12.5px; }
+    .blog .page-content.grid .excerpt .excerpt__header {
+      margin-bottom: 12.5px; }
+      .blog .page-content.grid .excerpt .excerpt__header a {
+        margin: 0; }
+    .blog .page-content.grid .excerpt .excerpt__date {
       margin-bottom: 25px; }
+    .blog .page-content.grid .excerpt .exceprt__body {
+      margin-bottom: 0; }
+    .blog .page-content.grid .excerpt a {
+      display: block;
+      margin-top: 25px; }
 
 .home article {
   padding: 0; }

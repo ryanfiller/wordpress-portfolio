@@ -3,24 +3,22 @@ $margin: 50px;
 .page-content {
     position: relative;
     background: $white;
+    padding-top: $margin;
+    padding-bottom: (2*$margin);
 
     article {
         width: 100%;
         z-index: 3;
-        padding: ($margin*2) 0 $margin 0;
+        padding: 0 $margin ($margin/2) $margin;
 
         h1, h2, h3, h4, h5, h6 {
             margin: 0;
-            padding: 0 $margin ($margin/2) $margin;
+            margin-bottom: $margin;
         }
 
         p {
-            padding: 0 $margin ($margin/2) $margin;
             margin: 0;
-
-            &:last-child {
-                padding-bottom:($margin*2);
-            }
+            margin-bottom: $margin;
 
             .alignnone {
                 display: block;

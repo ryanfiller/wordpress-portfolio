@@ -1,28 +1,39 @@
 .blog {
     .page-content.grid {
         flex-wrap: wrap;
-        padding-bottom: ($margin*3);
+        padding-bottom: ($margin*2);
 
         .excerpt {
             width: 50%;
-            padding-bottom: 0;
+            padding: 0 $margin ($margin) $margin;
 
             @include tablet-break {
                 width: 100%;
             }
 
-            p {
-                padding-bottom: 0;
+            .excerpt__image {
+                width: 100%;
+                margin-bottom: ($margin/4);
+            }
 
+            .excerpt__header {
+                margin-bottom: ($margin/4);
                 a {
-                    display: block;
-                    margin-top: ($margin/2);
+                    margin: 0;
                 }
             }
 
-            .excerpt__image {
-                width: 100%;
+            .excerpt__date {
                 margin-bottom: ($margin/2);
+            }
+
+            .exceprt__body {
+                margin-bottom: 0;
+            }
+
+            a {
+                display: block;
+                margin-top: ($margin/2);
             }
         }
     }

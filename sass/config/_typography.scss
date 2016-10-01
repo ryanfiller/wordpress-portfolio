@@ -1,25 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,700');
 
-@mixin primary-font() {
+@mixin body-font() {
     font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
 }
 
-@mixin secondary-font() {
+@mixin header-font() {
     font-family: 'Dosis', sans-serif;
 }
 
+@mixin nav-font() {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@mixin text-link {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
 body {
-    @include primary-font;
+    @include body-font;
     font-size: 16px;
+}
+
+h2 {
+    @include header-font;
+    color: $primary-color;
+    font-size: 4em;
+}
+
+h3 {
+    @include header-font;
+    color: $light-gray;
+    font-size: 3em;
+}
+
+h4 {
+    @include body-font;
+    color: $gray;
+    font-size: 1.125em;
 }
 
 .header {
     .nav__link {
         a {
-            @include secondary-font;
-            font-weight: 300;
-            text-transform: uppercase;
+            @include nav-font;
             font-size: 1.5em;
             color: $black;
 
@@ -35,22 +68,23 @@ body {
             &.current-page-ancestor a {
                 color: $secondary-color;
             }
+
+            &.current_page_parent a {
+                color: $secondary-color;
+            }
         }
 
         .subnav__link {
             a {
                 color: $white;
                 font-size: 1.25em;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-weight: 300;
             }
         }
 }
 
 .banner {
-    .banner__header {
-        @include secondary-font
+    h1.banner__header {
+        @include header-font
         font-weight: 300;
         text-transform: uppercase;
         font-size: 6em;
@@ -59,17 +93,39 @@ body {
     }
 }
 
+.excerpt {
+    .excerpt__header {
+        @include header-font;
+        text-decoration: none;
+        font-size: 2em;
+
+        a {
+            @include text-link;
+        }
+    }
+
+    .excerpt__body {
+        a {
+            @include text-link;
+            @include nav-font;
+            font-size: 1.5em;
+
+            &::after {
+                content: ' ▸▸';
+            }
+        }
+    }
+}
+
 .footer {
     .nav__link a {
+        @include nav-font;
         color: $white;
         font-size: 2em;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 300;
     }
 
     .footer__legal {
-        @include secondary-font;
+        @include header-font;
         font-size: .9em;
     }
 }

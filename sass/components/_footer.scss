@@ -23,14 +23,13 @@
                         width: 100%;
                         padding-top: .5em;
                         padding-bottom: .5em;
-                        @include secondary-font;
 
                         &:hover {
                             background: $dark-gray;
                         }
                     }
                 }
-            }    
+            }
         }
     }
 
