@@ -277,13 +277,15 @@ body {
   position: relative;
   background: #ffffff; }
   .page-content article {
+    width: 100%;
     z-index: 3;
     padding: 100px 0 50px 0; }
     .page-content article h1, .page-content article h2, .page-content article h3, .page-content article h4, .page-content article h5, .page-content article h6 {
       margin: 0;
       padding: 0 50px 25px 50px; }
     .page-content article p {
-      padding: 0 50px 25px 50px; }
+      padding: 0 50px 25px 50px;
+      margin: 0; }
       .page-content article p:last-child {
         padding-bottom: 100px; }
       .page-content article p .alignnone {
@@ -300,6 +302,25 @@ body {
       .page-content article p .aligncenter {
         display: block;
         margin: 0 auto; }
+
+.blog .page-content.grid {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 150px; }
+  .blog .page-content.grid .excerpt {
+    width: 50%;
+    padding-bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .blog .page-content.grid .excerpt {
+        width: 100%; } }
+    .blog .page-content.grid .excerpt p {
+      padding-bottom: 0; }
+      .blog .page-content.grid .excerpt p a {
+        display: block;
+        margin-top: 25px; }
+    .blog .page-content.grid .excerpt .excerpt__image {
+      width: 100%;
+      margin-bottom: 25px; }
 
 .home article {
   padding: 0; }
