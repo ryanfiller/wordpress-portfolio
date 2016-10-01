@@ -105,6 +105,9 @@ h4 {
   .excerpt .excerpt__link::after {
     content: ' ▸▸'; }
 
+.single .meta {
+  color: #697175; }
+
 .footer .nav__link a {
   font-family: 'Dosis', sans-serif;
   font-weight: 300;
@@ -434,6 +437,36 @@ body {
           color: #ffffff; }
         .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before {
           background: #f89c7d; }
+
+.single .meta {
+  margin-bottom: 3em;
+  text-align: center; }
+  .single .meta .meta__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1.5em; }
+    .single .meta .meta__date::before, .single .meta .meta__date::after {
+      content: '';
+      display: block;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: .125em;
+      background: currentColor; }
+    .single .meta .meta__date::before {
+      margin-right: .5em; }
+    .single .meta .meta__date::after {
+      margin-left: .5em; }
+  .single .meta .tag {
+    padding: 0 .25em; }
 
 .home article {
   padding: 0; }

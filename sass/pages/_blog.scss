@@ -94,3 +94,19 @@
         }
     }
 }
+
+.single {
+    .meta {
+        margin-bottom: (2*$margin);
+        text-align: center;
+
+        .meta__date {
+            @include strikethrough;
+            margin-bottom: $margin;
+        }
+
+        .tag {
+            padding: 0 .25em;
+        }
+    }
+}

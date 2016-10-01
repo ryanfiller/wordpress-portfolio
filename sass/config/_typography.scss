@@ -27,6 +27,27 @@
     }
 }
 
+@mixin strikethrough {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        flex: 1;
+        height: .125em;
+        background: currentColor;
+    }
+
+    &::before {
+        margin-right: .5em;
+    }
+    &::after {
+        margin-left: .5em;
+    }
+}
+
 body {
     @include body-font;
     font-size: 16px;
@@ -100,7 +121,6 @@ h4 {
 }
 
 .excerpt {
-
     .excerpt__title {
         @include header-font;
         text-decoration: none;
@@ -133,6 +153,12 @@ h4 {
         &::after {
             content: ' ▸▸';
         }
+    }
+}
+
+.single {
+    .meta {
+        color: $light-gray;
     }
 }
 

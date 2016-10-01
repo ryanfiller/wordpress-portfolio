@@ -8,7 +8,7 @@
 	<main class="excerpt__body">
 		<p class="excerpt__text">{{ post.post_excerpt }}</p>
 		<section class="excerpt__meta">
-			{% for item in post.tags %}
+			{% for item in post.terms %}
 					<span class="excerpt__tag">#{{item.title}}</span>
 			{% endfor %}
 		</section>
