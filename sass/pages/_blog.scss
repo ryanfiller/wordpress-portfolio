@@ -5,7 +5,8 @@
 
         .excerpt {
             width: 50%;
-            padding: 0 $margin ($margin) $margin;
+            padding: $margin;
+            margin-bottom: $margin;
 
             @include tablet-break {
                 width: 100%;

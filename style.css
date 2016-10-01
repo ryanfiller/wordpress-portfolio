@@ -321,29 +321,29 @@ body {
 .page-content {
   position: relative;
   background: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 100px; }
+  padding-top: 3em;
+  padding-bottom: 4.5em; }
   .page-content article {
     width: 100%;
     z-index: 3;
-    padding: 0 50px 25px 50px; }
+    padding: 1.5em; }
     .page-content article h1, .page-content article h2, .page-content article h3, .page-content article h4, .page-content article h5, .page-content article h6 {
       margin: 0;
-      margin-bottom: 50px; }
+      margin-bottom: 1.5em; }
     .page-content article p {
       margin: 0;
-      margin-bottom: 50px; }
+      margin-bottom: 1.5em; }
       .page-content article p .alignnone {
         display: block;
         width: calc(100px + 100%);
         height: auto;
-        margin: 0 -50px 50px -50px; }
+        margin: 0 -1.5em 1.5em -1.5em; }
       .page-content article p .alignleft {
         float: left;
-        margin: 0 50px 50px -50px; }
+        margin: 0 1.5em 1.5em -1.5em; }
       .page-content article p .alignright {
         float: right;
-        margin: 0 -50px 50px 50px; }
+        margin: 0 -1.5em 1.5em 1.5em; }
       .page-content article p .aligncenter {
         display: block;
         margin: 0 auto; }
@@ -351,10 +351,11 @@ body {
 .blog .page-content.grid {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 100px; }
+  padding-bottom: 3em; }
   .blog .page-content.grid .excerpt {
     width: 50%;
-    padding: 0 50px 50px 50px; }
+    padding: 1.5em;
+    margin-bottom: 1.5em; }
     @media only screen and (max-width: 768px) {
       .blog .page-content.grid .excerpt {
         width: 100%; } }
@@ -368,13 +369,13 @@ body {
           color: #f89c7d; }
       .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__image {
         width: 100%;
-        margin-bottom: 12.5px; }
+        margin-bottom: 0.375em; }
       .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header {
-        margin-bottom: 12.5px; }
+        margin-bottom: 0.375em; }
       .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__date {
-        margin-bottom: 25px; }
+        margin-bottom: 0.75em; }
       .blog .page-content.grid .excerpt .excerpt__block-link p.excerpt__body {
-        margin-bottom: 25px; }
+        margin-bottom: 0.75em; }
       .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__link {
         text-decoration: none; }
         .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__link::after {

@@ -1,15 +1,15 @@
-$margin: 50px;
+$margin: 1.5em;
 
 .page-content {
     position: relative;
     background: $white;
-    padding-top: $margin;
-    padding-bottom: (2*$margin);
+    padding-top: (2*$margin);
+    padding-bottom: (3*$margin);
 
     article {
         width: 100%;
         z-index: 3;
-        padding: 0 $margin ($margin/2) $margin;
+        padding: $margin;
 
         h1, h2, h3, h4, h5, h6 {
             margin: 0;
