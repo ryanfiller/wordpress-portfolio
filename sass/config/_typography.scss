@@ -104,15 +104,17 @@ h4 {
         }
     }
 
-    .excerpt__body {
-        a {
-            @include text-link;
-            @include nav-font;
-            font-size: 1.5em;
+    .excerpt__date {
+        font-size: .8em;
+    }
 
-            &::after {
-                content: ' ▸▸';
-            }
+    .excerpt__link {
+        @include text-link;
+        @include nav-font;
+        font-size: 1.5em;
+
+        &::after {
+            content: ' ▸▸';
         }
     }
 }

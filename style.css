@@ -70,7 +70,10 @@ h4 {
     .excerpt .excerpt__header a:hover {
       color: #f89c7d; }
 
-.excerpt .excerpt__body a {
+.excerpt .excerpt__date {
+  font-size: .8em; }
+
+.excerpt .excerpt__link {
   color: #3f7cac;
   text-decoration: none;
   font-family: 'Dosis', sans-serif;
@@ -78,9 +81,9 @@ h4 {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.5em; }
-  .excerpt .excerpt__body a:hover {
+  .excerpt .excerpt__link:hover {
     color: #f89c7d; }
-  .excerpt .excerpt__body a::after {
+  .excerpt .excerpt__link::after {
     content: ' ▸▸'; }
 
 .footer .nav__link a {
@@ -355,20 +358,27 @@ body {
     @media only screen and (max-width: 768px) {
       .blog .page-content.grid .excerpt {
         width: 100%; } }
-    .blog .page-content.grid .excerpt .excerpt__image {
-      width: 100%;
-      margin-bottom: 12.5px; }
-    .blog .page-content.grid .excerpt .excerpt__header {
-      margin-bottom: 12.5px; }
-      .blog .page-content.grid .excerpt .excerpt__header a {
-        margin: 0; }
-    .blog .page-content.grid .excerpt .excerpt__date {
-      margin-bottom: 25px; }
-    .blog .page-content.grid .excerpt .exceprt__body {
-      margin-bottom: 0; }
-    .blog .page-content.grid .excerpt a {
-      display: block;
-      margin-top: 25px; }
+    .blog .page-content.grid .excerpt .excerpt__block-link {
+      text-decoration: none;
+      color: inherit; }
+      .blog .page-content.grid .excerpt .excerpt__block-link:hover {
+        position: relative;
+        top: -3px; }
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header, .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link {
+          color: #f89c7d; }
+      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__image {
+        width: 100%;
+        margin-bottom: 12.5px; }
+      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__header {
+        margin-bottom: 12.5px; }
+      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__date {
+        margin-bottom: 25px; }
+      .blog .page-content.grid .excerpt .excerpt__block-link p.excerpt__body {
+        margin-bottom: 25px; }
+      .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__link {
+        text-decoration: none; }
+        .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__link::after {
+          content: ' ▸▸'; }
 
 .home article {
   padding: 0; }
