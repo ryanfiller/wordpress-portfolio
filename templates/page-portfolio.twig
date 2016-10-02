@@ -1,0 +1,29 @@
+{% extends "page.twig" %}
+
+{% block banner %}
+	<section class="banner banner--tall" style="background-image: url('{{post.thumbnail}}');">
+            <div class="js-homepage-swiper homepage-swiper">
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        </section>
+                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        </section>
+                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        </section>
+                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        </section>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-container">
+                    <div class="swiper-button-prev">&#9664;</div>
+                    <div class="swiper-button-next">&#9658;</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+	</section>
+{% endblock %}
