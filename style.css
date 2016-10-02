@@ -13,7 +13,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
-  font-size: 16px; }
+  font-size: 18px; }
 
 p {
   font-size: 1.25em;
@@ -201,7 +201,7 @@ body {
   padding-right: 1.5em; }
 
 .grid--container {
-  max-width: 85vw;
+  max-width: 80vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5em;
@@ -348,7 +348,7 @@ body {
     content: '';
     display: block;
     background: #fcfaf6;
-    width: 85vw;
+    width: 80vw;
     height: 7em;
     position: absolute;
     right: 0;
@@ -398,7 +398,7 @@ body {
           -ms-flex-align: center;
                   -ms-grid-row-align: center;
               align-items: center;
-      width: 7.5vw;
+      width: 10vw;
       text-align: center;
       padding: .5em 0;
       font-size: 1.5em;
@@ -417,7 +417,7 @@ body {
               transform: rotate(180deg); }
   .banner--portfolio-swiper .swiper-pagination {
     width: 100%;
-    max-width: 85vw;
+    max-width: 80vw;
     position: relative;
     z-index: 10;
     top: -2.25em;
