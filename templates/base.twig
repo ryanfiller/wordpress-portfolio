@@ -28,7 +28,7 @@
 		{% endblock %}
 
 		{% block banner %}
-			<section class="banner {% block bannertype %}{% endblock %}" style="background-image: url('{{post.thumbnail}}');">
+			<section class="banner banner--overlay {% block bannertype %}{% endblock %}" style="background-image: url('{{post.thumbnail}}');">
 				{% include 'components/banner.twig' %}
 			</section>
 		{% endblock %}

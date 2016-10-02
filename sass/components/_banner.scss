@@ -5,19 +5,9 @@ $banner-padding: 4em;
     background-position: center;
     padding-top: $banner-padding;
     padding-bottom: $banner-padding;
-    position: relative;
+
     box-shadow: inset  0  15px 15px -15px transparentize($black, .25),
                 inset  0 -15px 15px -15px transparentize($black, .25);
-
-    &::before {
-        content: '';
-        display: block;
-        background: $dark-gray;
-        opacity: .5;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        z-index: 1;
-    }
 
     .grid {
         justify-content: center;
@@ -30,9 +20,24 @@ $banner-padding: 4em;
     }
 }
 
+.banner--overlay {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        background: $dark-gray;
+        opacity: .5;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: 1;
+    }
+}
+
 .banner--overlap {
+    position: relative;
     padding-bottom: calc(#{$banner-padding} + 5em);
-    margin-bottom: -5em;
+    margin-bottom: -3.5em;
 
     & + .page-content {
         background: $white;
@@ -44,9 +49,9 @@ $banner-padding: 4em;
         display: block;
         background: $white;
         width: $container-width;
-        height:7em;
+        height: 7em;
         position: absolute;
-        right: 0; bottom: -2em; left: 0;
+        right: 0; bottom: -3.5em; left: 0;
         margin: 0 auto;
         z-index: 2;
         box-shadow: $shadow;
@@ -57,7 +62,98 @@ $banner-padding: 4em;
     }
 }
 
-.banner--portfolio {
+.banner--portfolio-swiper {
     padding: 0;
     height: 90vh;
+
+    @include large-break {
+        height: 100vh;
+    }
+
+    .swiper-wrapper {
+        height: 100%;
+        display: block;
+
+        .swiper-slide {
+            height: 100%;
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .swiper-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -.64em;
+
+        @include large-break {
+            top: -2.5em;
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 7.5vw;
+            text-align: center;
+            padding: .5em 0;
+            font-size: 1.5em;
+            line-height: 1em;
+
+            span {
+                position: relative;
+                top: -.125em;
+
+                @include large-break {
+                    color: $gray;
+                }
+            }
+
+            &:hover {
+                @include float;
+            }
+        }
+
+        .swiper-button-prev {
+            transform: rotate(180deg);
+        }
+    }
+
+    .swiper-pagination {
+        width: 100%;
+        max-width: $container-width;
+        position: relative;
+        z-index: 10;
+        top: (-1.5*$spacing);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include large-break {
+            top: 0;
+        }
+
+        .swiper-pagination-bullet {
+            display: block;
+            cursor: pointer;
+            background-color: $secondary-color;
+            height: .75em;
+            width: .75em;
+            padding: .25em;
+            margin: 0 .5em;
+            border-radius: 100%;
+
+            &-active {
+                background-color: $primary-color;
+            }
+
+            &:hover {
+                @include float;
+            }
+        }
+    }
 }

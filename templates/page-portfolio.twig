@@ -1,36 +1,40 @@
 {% extends "page.twig" %}
 
 {% block banner %}
-	<section class="banner banner--overlap banner--portfolio" style="background-image: url('{{post.thumbnail}}');">
-            <div class="js-homepage-swiper homepage-swiper">
+	<section class="banner banner--overlap banner--portfolio-swiper" style="background-image: url('{{post.thumbnail}}');">
+            <!-- <div class="banner--swiper"> -->
 
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        <section class="swiper-slide" style="background-image: url('https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif')">
                         </section>
-                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        <section class="swiper-slide" style="background-image: url('https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif')">
                         </section>
-                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        <section class="swiper-slide" style="background-image: url('https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif')">
                         </section>
-                        <section class="swiper-slide" style="background-image: url({{post.thumbnail}})">
+                        <section class="swiper-slide" style="background-image: url('https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif')">
                         </section>
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-container">
-                    <div class="swiper-button-prev">&#9664;</div>
-                    <div class="swiper-button-next">&#9658;</div>
+                    <div class="swiper-button-prev"><span>▸▸</span></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                    </div>
+                    <div class="swiper-button-next"><span>▸▸</span></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
+            <!-- </div> -->
 
 	</section>
 {% endblock %}
 
 {% block content %}
-    <h1 class="portfolio__h1">{{post.title}}</h1>
-	{% for post in posts %}
-		{% include ['excerpt-'~post.post_type~'.twig', 'excerpt.twig'] %}
-	{% endfor %}
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+        <h1 class="portfolio__h1">{{post.title}}</h1>
+		{{post.content}}
+	</article>
 {% endblock %}

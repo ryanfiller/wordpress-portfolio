@@ -58,22 +58,31 @@ p {
     line-height: 2em;
 }
 
+.portfolio__h1 {
+    @include header-font;
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 h2 {
     @include header-font;
     color: $primary-color;
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 h3 {
     @include header-font;
     color: $light-gray;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h4 {
     @include body-font;
     color: $gray;
-    font-size: 1.125em;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 .header {
@@ -117,6 +126,27 @@ h4 {
         font-size: 6em;
         letter-spacing: .025em;
         color: $white;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        @include nav-font;
+        color: $white;
+        background-color: $gray;
+        font-size: 1em;
+        cursor: pointer;
+
+        &:hover {
+            color: $secondary-color;
+        }
+
+        @include large-break {
+            background-color: transparent;
+            color: $white;
+        }
+
+        @include tablet-break {
+            display: none;
+        }
     }
 }
 

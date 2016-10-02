@@ -11,7 +11,7 @@
 
         h1, h2, h3, h4, h5, h6 {
             margin: 0;
-            margin-bottom: $spacing;
+            margin-bottom: $spacing/2;
         }
 
         p {
@@ -20,24 +20,24 @@
 
             .alignnone {
                 display: block;
-                width: calc(6em + 100%);
-                height: auto;
-                margin: 0 (-2*$spacing) $spacing (-2*$spacing);
+                margin: 0 auto;
             }
 
             .alignleft {
                 float: left;
-                margin: 0 $spacing $spacing (-2*$spacing);
+                margin: 0 $spacing $spacing (-1.6*$spacing);
             }
 
             .alignright {
                 float: right;
-                margin: 0 (-2*$spacing) $spacing $spacing;
+                margin: 0 (-1.6*$spacing) $spacing $spacing;
             }
 
             .aligncenter {
                 display: block;
-                margin: 0 auto;
+                width: calc(4.8em + 100%);
+                height: auto;
+                margin: 0 (-1.6*$spacing) $spacing (-1.6*$spacing);
             }
         }
     }
