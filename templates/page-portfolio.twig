@@ -1,7 +1,7 @@
 {% extends "page.twig" %}
 
 {% block banner %}
-	<section class="banner banner--tall" style="background-image: url('{{post.thumbnail}}');">
+	<section class="banner banner--overlap banner--portfolio" style="background-image: url('{{post.thumbnail}}');">
             <div class="js-homepage-swiper homepage-swiper">
 
                 <!-- Additional required wrapper -->
@@ -26,4 +26,11 @@
             </div>
 
 	</section>
+{% endblock %}
+
+{% block content %}
+    <h1 class="portfolio__h1">{{post.title}}</h1>
+	{% for post in posts %}
+		{% include ['excerpt-'~post.post_type~'.twig', 'excerpt.twig'] %}
+	{% endfor %}
 {% endblock %}

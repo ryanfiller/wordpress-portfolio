@@ -30,9 +30,9 @@ $banner-padding: 4em;
     }
 }
 
-.banner--tall {
-    padding-bottom: calc(#{$banner-padding} + 10em);
-    margin-bottom: -10em;
+.banner--overlap {
+    padding-bottom: calc(#{$banner-padding} + 5em);
+    margin-bottom: -5em;
 
     & + .page-content {
         background: $white;
@@ -44,7 +44,7 @@ $banner-padding: 4em;
         display: block;
         background: $white;
         width: $container-width;
-        height:12em;
+        height:7em;
         position: absolute;
         right: 0; bottom: -2em; left: 0;
         margin: 0 auto;
@@ -55,4 +55,9 @@ $banner-padding: 4em;
             width: 100vw;
         }
     }
+}
+
+.banner--portfolio {
+    padding: 0;
+    height: 90vh;
 }
