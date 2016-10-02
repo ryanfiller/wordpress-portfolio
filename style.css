@@ -309,7 +309,7 @@ body {
       text-decoration: none;
       text-decoration: none; }
       .subnav .subnav__link a:hover {
-        background: #f89c7d; }
+        background: #1e2223; }
 
 .banner {
   background-size: cover;
@@ -452,7 +452,7 @@ body {
         top: -1px; }
 
 .footer {
-  background: #707f83; }
+  background: #3f7cac; }
   .footer .footer--pre {
     background: #363d3e; }
     .footer .footer--pre .grid {
@@ -479,7 +479,9 @@ body {
               background: #1e2223; }
   .footer .footer--main {
     text-align: center;
-    color: #fcfaf6; }
+    color: #fcfaf6;
+    padding-top: 3em;
+    padding-bottom: 3em; }
   .footer .footer--post {
     background: #1e2223;
     color: #fcfaf6;
