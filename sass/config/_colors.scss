@@ -1,9 +1,9 @@
 $primary-color: #3f7cac;
 $secondary-color: #f89c7d;
 $white: #ffffff;
-$black: #1b2021;
-$gray: #393d3f;
-$light-gray: lighten($gray, 35%);
+$black: #1e2223;
+$gray: lighten($black, 10%);
+$light-gray: lighten($gray, 25%);
 $dark-gray: darken($gray, 10%);
 
 $shadow: 0 0 15px transparentize($black, .25);
