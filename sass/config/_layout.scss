@@ -20,14 +20,14 @@ body {
 }
 
 $container-width: 950px;
-$gutter: 1.5em;
+$spacing: 1.5em;
 
 @mixin container() {
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: $gutter;
-    padding-right: $gutter;
+    padding-left: $spacing;
+    padding-right: $spacing;
 }
 
 @mixin grid() {
@@ -40,8 +40,8 @@ $gutter: 1.5em;
 
 .grid {
     display: flex;
-    padding-left: $gutter;
-    padding-right: $gutter;
+    padding-left: $spacing;
+    padding-right: $spacing;
 }
 
 .grid--container {
