@@ -375,15 +375,15 @@ body {
       margin-bottom: 1.5em; }
       .page-content article p .alignnone {
         display: block;
-        width: calc(100px + 100%);
+        width: calc(6em + 100%);
         height: auto;
-        margin: 0 -1.5em 1.5em -1.5em; }
+        margin: 0 -3em 1.5em -3em; }
       .page-content article p .alignleft {
         float: left;
-        margin: 0 1.5em 1.5em -1.5em; }
+        margin: 0 1.5em 1.5em -3em; }
       .page-content article p .alignright {
         float: right;
-        margin: 0 -1.5em 1.5em 1.5em; }
+        margin: 0 -3em 1.5em 1.5em; }
       .page-content article p .aligncenter {
         display: block;
         margin: 0 auto; }

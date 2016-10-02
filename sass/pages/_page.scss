@@ -22,19 +22,19 @@ $margin: 1.5em;
 
             .alignnone {
                 display: block;
-                width: calc(100px + 100%);
+                width: calc(6em + 100%);
                 height: auto;
-                margin: 0 (-1*$margin) $margin (-1*$margin);
+                margin: 0 (-2*$margin) $margin (-2*$margin);
             }
 
             .alignleft {
                 float: left;
-                margin: 0 $margin $margin (-1*$margin);
+                margin: 0 $margin $margin (-2*$margin);
             }
 
             .alignright {
                 float: right;
-                margin: 0 (-1*$margin) $margin $margin;
+                margin: 0 (-2*$margin) $margin $margin;
             }
 
             .aligncenter {
