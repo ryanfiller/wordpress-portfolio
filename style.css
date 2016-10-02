@@ -238,7 +238,7 @@ body {
       display: none; }
 
 .header {
-  border-bottom: 5px solid #3f7cac;
+  border-bottom: 0.5em solid #3f7cac;
   background: #fcfaf6; }
   .header .header--pre {
     background: #1e2223; }
@@ -297,14 +297,17 @@ body {
             flex: 1; }
     .subnav .subnav__link a {
       color: #fcfaf6;
-      background: #707f83;
+      background: #363d3e;
       text-align: center;
       display: block;
       width: 100%;
       padding-top: .5em;
       padding-bottom: .5em;
-      font-family: 'Dosis', sans-serif;
-      font-weight: 400; }
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-decoration: none; }
       .subnav .subnav__link a:hover {
         background: #f89c7d; }
 

@@ -12,13 +12,14 @@
 
         a {
             color: $white;
-            background: $light-gray;
+            background: $gray;
             text-align: center;
             display: block;
             width: 100%;
             padding-top: .5em;
             padding-bottom: .5em;
-            @include header-font;
+            @include nav-font;
+            text-decoration: none;
 
             &:hover {
                 background: $secondary-color;
