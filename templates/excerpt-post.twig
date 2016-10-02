@@ -9,9 +9,9 @@
 		<p class="excerpt__text">{{ post.post_excerpt }}</p>
 		<section class="excerpt__meta">
 			{% for item in post.terms %}
-					<span class="excerpt__tag"><b>#</b>{{item.title}}</span>
+					<span class="excerpt__tag"><b>#</b>{{item.title}}  </span>
 			{% endfor %}
 		</section>
-		<span class="excerpt__link" href="{{post.link}}">Read More</span>
+		<div class="excerpt__link" href="{{post.link}}">Read More</div>
 	</main>
 {% endblock %}

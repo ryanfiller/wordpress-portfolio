@@ -26,7 +26,7 @@ h2 {
 h3 {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
-  color: #697175;
+  color: #90979b;
   font-size: 3em; }
 
 h4 {
@@ -36,14 +36,14 @@ h4 {
   font-size: 1.125em; }
 
 .header .nav__link a {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.5em;
   color: #1b2021; }
   .header .nav__link a:hover {
-    color: #697175; }
+    color: #90979b; }
 
 .header .nav__link.current-menu-item a {
   color: #f89c7d; }
@@ -89,12 +89,12 @@ h4 {
 .excerpt .excerpt__tag {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  color: #697175; }
+  color: #90979b; }
 
 .excerpt .excerpt__link {
   color: #3f7cac;
   text-decoration: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -105,14 +105,12 @@ h4 {
     content: ' ▸▸'; }
 
 .single .meta {
-  color: #697175; }
-  .single .meta .meta__date {
-    font-weight: bold; }
+  color: #90979b; }
 
 .single .back__blog {
   color: #3f7cac;
   text-decoration: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -125,7 +123,7 @@ h4 {
     content: '◂◂ '; }
 
 .footer .nav__link a {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -224,7 +222,7 @@ body {
         .header .header--main .grid .header__logo .header__logo__image path, .header .header--main .grid .header__logo .header__logo__image polygon {
           fill: #1b2021; }
         .header .header--main .grid .header__logo .header__logo__image:hover path, .header .header--main .grid .header__logo .header__logo__image:hover polygon {
-          fill: #697175; }
+          fill: #90979b; }
     .header .header--main .grid .nav {
       list-style: none;
       padding: 0;
@@ -261,7 +259,7 @@ body {
             flex: 1; }
     .subnav .subnav__link a {
       color: #ffffff;
-      background: #697175;
+      background: #90979b;
       text-align: center;
       display: block;
       width: 100%;
@@ -320,7 +318,7 @@ body {
     box-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
 
 .footer {
-  background: #697175; }
+  background: #90979b; }
   .footer .footer--pre {
     background: #393d3f; }
     .footer .footer--pre .grid {
@@ -441,15 +439,18 @@ body {
           margin-bottom: 0.75em; }
         .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link {
           text-decoration: none; }
-      .blog .page-content.grid .excerpt .excerpt__block-link:hover, .archive .page-content.grid .excerpt .excerpt__block-link:hover {
+          @media only screen and (max-width: 768px) {
+            .blog .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link .excerpt__body .excerpt__link {
+              text-align: center; } }
+      .blog .page-content.grid .excerpt .excerpt__block-link:hover, .blog .page-content.grid .excerpt .excerpt__block-link:active, .archive .page-content.grid .excerpt .excerpt__block-link:hover, .archive .page-content.grid .excerpt .excerpt__block-link:active {
         position: relative;
-        top: -3px;
+        top: -1.25px;
         box-shadow: 0 0 15px rgba(27, 32, 33, 0.75); }
-        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link {
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__link {
           color: #f89c7d; }
-        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title {
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__header .excerpt__title {
           color: #ffffff; }
-        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before {
+        .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__header::before, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header::before, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__header::before {
           background: #f89c7d; }
 
 .single .meta {

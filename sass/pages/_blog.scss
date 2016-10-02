@@ -64,10 +64,14 @@
 
                     .excerpt__link {
                         text-decoration: none;
+
+                        @include tablet-break {
+                            text-align: center;
+                        }
                     }
                 }
 
-                &:hover {
+                &:hover, &:active {
                     position: relative;
                     top: -1.25px;
                     box-shadow: $shadow;
