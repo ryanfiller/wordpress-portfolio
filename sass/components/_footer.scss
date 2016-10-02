@@ -1,5 +1,5 @@
 .footer {
-        background: $light-gray;
+        background: $primary-color;
 
     .footer--pre {
         background: $gray;
@@ -36,6 +36,8 @@
     .footer--main {
         text-align: center;
         color: $white;
+        padding-top: 2*$spacing;
+        padding-bottom: 2*$spacing;
     }
 
     .footer--post {
