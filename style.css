@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Globals */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,700");
 * {
   box-sizing: border-box; }
@@ -11,7 +11,7 @@
   transition: .2s; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 16px; }
 
@@ -39,7 +39,7 @@ h3 {
   font-size: 2.5em; }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   color: #393d3f;
   font-weight: bold;
@@ -47,7 +47,7 @@ h4 {
   line-height: 1.5em; }
 
 .header .nav__link a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -79,7 +79,7 @@ h4 {
   color: #ffffff; }
 
 .banner .swiper-button-prev, .banner .swiper-button-next {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -110,21 +110,21 @@ h4 {
       color: #f89c7d; }
 
 .excerpt .excerpt__date {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: .8em;
   color: #ffffff;
   font-weight: bold; }
 
 .excerpt .excerpt__tag {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   color: #90979b; }
 
 .excerpt .excerpt__link {
   color: #3f7cac;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -140,7 +140,7 @@ h4 {
 .single .back__blog {
   color: #3f7cac;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -152,12 +152,12 @@ h4 {
     content: ' ▸▸';
     display: inline-block;
     position: relative;
-    top: .125em;
+    top: .025em;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
 .footer .nav__link a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
@@ -404,7 +404,7 @@ body {
       line-height: 1em; }
       .banner--portfolio-swiper .swiper-button-container .swiper-button-prev span, .banner--portfolio-swiper .swiper-button-container .swiper-button-next span {
         position: relative;
-        top: -.125em; }
+        top: -.025em; }
         @media only screen and (min-width: 1200px) {
           .banner--portfolio-swiper .swiper-button-container .swiper-button-prev span, .banner--portfolio-swiper .swiper-button-container .swiper-button-next span {
             color: #393d3f; } }
