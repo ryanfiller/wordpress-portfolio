@@ -487,6 +487,9 @@ body {
       text-align: center; }
 
 /* Pages */
+body {
+  background-color: #fcfaf6; }
+
 .page-content {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
