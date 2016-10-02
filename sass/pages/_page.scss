@@ -1,8 +1,9 @@
 .page-content {
+    flex-direction: column;
     position: relative;
     background: $white;
     padding-top: (2*$spacing);
-    padding-bottom: (3*$spacing);
+    padding-bottom: (6*$spacing);
 
     article {
         width: 100%;
