@@ -49,6 +49,10 @@ $banner-padding: 4em;
         right: 0; bottom: -2em; left: 0;
         margin: 0 auto;
         z-index: 2;
-        box-shadow: $shadow
+        box-shadow: $shadow;
+
+        @include tablet-break {
+            width: 100vw;
+        }
     }
 }

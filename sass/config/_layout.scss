@@ -19,7 +19,7 @@ body {
     }
 }
 
-$container-width: 1100px;
+$container-width: 80vw;
 $spacing: 1.5em;
 
 @mixin container() {
@@ -28,6 +28,10 @@ $spacing: 1.5em;
     margin-right: auto;
     padding-left: $spacing;
     padding-right: $spacing;
+
+    @include tablet-break {
+        max-width: 100vw;
+    }
 }
 
 @mixin grid() {
