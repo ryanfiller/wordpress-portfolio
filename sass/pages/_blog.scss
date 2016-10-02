@@ -2,12 +2,12 @@
     .page-content.grid {
         align-content: flex-start;
         flex-wrap: wrap;
-        padding-bottom: ($margin*2);
+        padding-bottom: ($spacing*2);
 
         .excerpt {
             width: 50%;
-            padding: $margin;
-            margin-bottom: $margin;
+            padding: $spacing;
+            margin-bottom: $spacing;
 
             @include tablet-break {
                 width: 100%;
@@ -19,8 +19,8 @@
                 display: block;
 
                 .excerpt__header {
-                    padding: (5*$margin) $margin ($margin/2) $margin;
-                    margin-bottom: $margin;
+                    padding: (5*$spacing) $spacing ($spacing/2) $spacing;
+                    margin-bottom: $spacing;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -40,7 +40,7 @@
                         text-shadow: $shadow;
                         position: relative;
                         z-index: 5;
-                        margin-bottom: ($margin/4);
+                        margin-bottom: ($spacing/4);
                     }
 
                     .excerpt__title {
@@ -52,14 +52,14 @@
                 }
 
                 .excerpt__body {
-                    padding: 0 $margin  $margin $margin;
+                    padding: 0 $spacing  $spacing $spacing;
 
                     .excerpt__meta {
-                        margin-bottom: $margin;
+                        margin-bottom: $spacing;
                     }
 
                     p.excerpt__text {
-                        margin-bottom: ($margin/2);
+                        margin-bottom: ($spacing/2);
                     }
 
                     .excerpt__link {
@@ -97,12 +97,12 @@
 
 .single {
     .meta {
-        margin-bottom: (2*$margin);
+        margin-bottom: (2*$spacing);
         text-align: center;
 
         .meta__date {
             @include strikethrough;
-            margin-bottom: $margin;
+            margin-bottom: $spacing;
         }
 
         .tag {

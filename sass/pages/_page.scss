@@ -1,40 +1,38 @@
-$margin: 1.5em;
-
 .page-content {
     position: relative;
     background: $white;
-    padding-top: (2*$margin);
-    padding-bottom: (3*$margin);
+    padding-top: (2*$spacing);
+    padding-bottom: (3*$spacing);
 
     article {
         width: 100%;
         z-index: 3;
-        padding: $margin;
+        padding: $spacing;
 
         h1, h2, h3, h4, h5, h6 {
             margin: 0;
-            margin-bottom: $margin;
+            margin-bottom: $spacing;
         }
 
         p {
             margin: 0;
-            margin-bottom: $margin;
+            margin-bottom: $spacing;
 
             .alignnone {
                 display: block;
                 width: calc(6em + 100%);
                 height: auto;
-                margin: 0 (-2*$margin) $margin (-2*$margin);
+                margin: 0 (-2*$spacing) $spacing (-2*$spacing);
             }
 
             .alignleft {
                 float: left;
-                margin: 0 $margin $margin (-2*$margin);
+                margin: 0 $spacing $spacing (-2*$spacing);
             }
 
             .alignright {
                 float: right;
-                margin: 0 (-2*$margin) $margin $margin;
+                margin: 0 (-2*$spacing) $spacing $spacing;
             }
 
             .aligncenter {
