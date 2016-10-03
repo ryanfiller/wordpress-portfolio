@@ -43,4 +43,8 @@
 			{{ function('wp_footer') }}
 		{% endblock %}
 	</body>
+	{% block js %}
+		<script src="{{site.theme.link}}/jscripts/swiper.js"></script>
+		<script src="{{site.theme.link}}/jscripts/swiperInit.js"></script>
+	{% endblock %}
 </html>
