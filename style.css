@@ -514,6 +514,13 @@ body {
     .page-content article p {
       margin: 0;
       margin-bottom: 1.5em; }
+      .page-content article p a {
+        color: #1e2223;
+        text-decoration: none;
+        border-bottom: 1px #f89c7d dotted; }
+        .page-content article p a:hover {
+          color: #3f7cac;
+          border-bottom: 1px #3f7cac dotted; }
       .page-content article p .alignnone {
         display: block;
         margin: 0 auto; }

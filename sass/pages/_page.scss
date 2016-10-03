@@ -23,6 +23,17 @@ body {
             margin: 0;
             margin-bottom: $spacing;
 
+            a {
+                color: $black;
+                text-decoration: none;
+                border-bottom: 1px $secondary-color dotted;
+
+                &:hover {
+                    color: $primary-color;
+                    border-bottom: 1px $primary-color dotted;
+                }
+            }
+
             .alignnone {
                 display: block;
                 margin: 0 auto;
