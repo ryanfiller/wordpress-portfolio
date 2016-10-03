@@ -1,5 +1,6 @@
 .blog, .archive {
     .page-content.grid {
+        flex-direction: row;
         align-content: flex-start;
         flex-wrap: wrap;
         padding-bottom: ($spacing*2);
