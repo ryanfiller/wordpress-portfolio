@@ -361,27 +361,27 @@ body {
     left: 0;
     margin: 0 auto;
     z-index: 2;
-    box-shadow: 0 0 15px rgba(30, 34, 35, 0.75); }
+    box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.15), 0px 20px 15px rgba(225, 0, 0, 0.1), 0px -10px 15px rgba(255, 0, 0, 0.15), 0px -20px 15px rgba(0, 255, 0, 0.1), 10px 0px 15px rgba(255, 255, 0, 0.15), 20px 0px 15px rgba(0, 255, 255, 0.1), -10px 0px 15px rgba(0, 255, 255, 0.15), -20px 0px 15px rgba(255, 255, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.25); }
     @media only screen and (max-width: 768px) {
       .banner--overlap::after {
         width: 100vw; } }
 
-.banner--portfolio-swiper {
+.banner--swiper {
   padding: 0;
   height: 90vh; }
   @media only screen and (min-width: 1200px) {
-    .banner--portfolio-swiper {
+    .banner--swiper {
       height: 100vh; } }
-  .banner--portfolio-swiper .swiper-wrapper {
+  .banner--swiper .swiper-wrapper {
     height: 100%;
     display: block; }
-    .banner--portfolio-swiper .swiper-wrapper .swiper-slide {
+    .banner--swiper .swiper-wrapper .swiper-slide {
       height: 100%;
       display: block;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
-  .banner--portfolio-swiper .swiper-button-container {
+  .banner--swiper .swiper-button-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,9 +392,9 @@ body {
     position: relative;
     top: -.64em; }
     @media only screen and (min-width: 1200px) {
-      .banner--portfolio-swiper .swiper-button-container {
+      .banner--swiper .swiper-button-container {
         top: -2.5em; } }
-    .banner--portfolio-swiper .swiper-button-container .swiper-button-prev, .banner--portfolio-swiper .swiper-button-container .swiper-button-next {
+    .banner--swiper .swiper-button-container .swiper-button-prev, .banner--swiper .swiper-button-container .swiper-button-next {
       display: block;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -408,19 +408,19 @@ body {
       padding: .5em 0;
       font-size: 1.5em;
       line-height: 1em; }
-      .banner--portfolio-swiper .swiper-button-container .swiper-button-prev span, .banner--portfolio-swiper .swiper-button-container .swiper-button-next span {
+      .banner--swiper .swiper-button-container .swiper-button-prev span, .banner--swiper .swiper-button-container .swiper-button-next span {
         position: relative;
         top: -.025em; }
         @media only screen and (min-width: 1200px) {
-          .banner--portfolio-swiper .swiper-button-container .swiper-button-prev span, .banner--portfolio-swiper .swiper-button-container .swiper-button-next span {
+          .banner--swiper .swiper-button-container .swiper-button-prev span, .banner--swiper .swiper-button-container .swiper-button-next span {
             color: #363d3e; } }
-      .banner--portfolio-swiper .swiper-button-container .swiper-button-prev:hover, .banner--portfolio-swiper .swiper-button-container .swiper-button-next:hover {
+      .banner--swiper .swiper-button-container .swiper-button-prev:hover, .banner--swiper .swiper-button-container .swiper-button-next:hover {
         position: relative;
         top: -1px; }
-    .banner--portfolio-swiper .swiper-button-container .swiper-button-prev {
+    .banner--swiper .swiper-button-container .swiper-button-prev {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
-  .banner--portfolio-swiper .swiper-pagination {
+  .banner--swiper .swiper-pagination {
     width: 100%;
     max-width: 80vw;
     position: relative;
@@ -436,20 +436,20 @@ body {
         -ms-flex-align: center;
             align-items: center; }
     @media only screen and (min-width: 1200px) {
-      .banner--portfolio-swiper .swiper-pagination {
+      .banner--swiper .swiper-pagination {
         top: 0; } }
-    .banner--portfolio-swiper .swiper-pagination .swiper-pagination-bullet {
+    .banner--swiper .swiper-pagination .swiper-pagination-bullet {
       display: block;
       cursor: pointer;
       background-color: #f89c7d;
-      height: .75em;
-      width: .75em;
-      padding: .25em;
+      height: .3em;
+      width: .3em;
+      padding: .3em;
       margin: 0 .5em;
       border-radius: 100%; }
-      .banner--portfolio-swiper .swiper-pagination .swiper-pagination-bullet-active {
+      .banner--swiper .swiper-pagination .swiper-pagination-bullet-active {
         background-color: #3f7cac; }
-      .banner--portfolio-swiper .swiper-pagination .swiper-pagination-bullet:hover {
+      .banner--swiper .swiper-pagination .swiper-pagination-bullet:hover {
         position: relative;
         top: -1px; }
 
@@ -601,7 +601,7 @@ body {
       .blog .page-content.grid .excerpt .excerpt__block-link:hover, .blog .page-content.grid .excerpt .excerpt__block-link:active, .archive .page-content.grid .excerpt .excerpt__block-link:hover, .archive .page-content.grid .excerpt .excerpt__block-link:active {
         position: relative;
         top: -1.25px;
-        box-shadow: 0 0 15px rgba(30, 34, 35, 0.75); }
+        box-shadow: 0px 10px 15px rgba(0, 255, 0, 0.15), 0px 20px 15px rgba(225, 0, 0, 0.1), 0px -10px 15px rgba(255, 0, 0, 0.15), 0px -20px 15px rgba(0, 255, 0, 0.1), 10px 0px 15px rgba(255, 255, 0, 0.15), 20px 0px 15px rgba(0, 255, 255, 0.1), -10px 0px 15px rgba(0, 255, 255, 0.15), -20px 0px 15px rgba(255, 255, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.25); }
         .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__link, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__link {
           color: #f89c7d; }
         .blog .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title, .blog .page-content.grid .excerpt .excerpt__block-link:active .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:hover .excerpt__header .excerpt__title, .archive .page-content.grid .excerpt .excerpt__block-link:active .excerpt__header .excerpt__title {
@@ -644,18 +644,18 @@ body {
   text-align: center; }
 
 @media only screen and (min-width: 1200px) {
-  body.page-template-portfolio-template {
+  body.single-portfolio {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    body.page-template-portfolio-template .header {
+    body.single-portfolio .header {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-    body.page-template-portfolio-template .banner {
+    body.single-portfolio .banner {
       width: 50%;
       -ms-flex-item-align: start;
           align-self: flex-start;
@@ -663,9 +663,9 @@ body {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
               order: 3; }
-    body.page-template-portfolio-template .banner--overlap::after {
+    body.single-portfolio .banner--overlap::after {
       display: none; }
-    body.page-template-portfolio-template .page-content {
+    body.single-portfolio .page-content {
       margin: 0;
       width: 50%;
       height: 90vh;
@@ -675,12 +675,12 @@ body {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2; }
-      body.page-template-portfolio-template .page-content::-webkit-scrollbar {
+      body.single-portfolio .page-content::-webkit-scrollbar {
         display: none; }
-      body.page-template-portfolio-template .page-content .portfolio__h1 {
+      body.single-portfolio .page-content .portfolio__h1 {
         margin: 0;
         padding: 1.5em 0; }
-    body.page-template-portfolio-template .footer {
+    body.single-portfolio .footer {
       -webkit-box-ordinal-group: 5;
           -ms-flex-order: 4;
               order: 4; } }

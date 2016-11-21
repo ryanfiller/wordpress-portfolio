@@ -1,7 +1,7 @@
 {% extends "page.twig" %}
 
 {% block banner %}
-	<section class="banner banner--overlap banner--portfolio-swiper js-swiper" style="background-image: url('{{post.thumbnail}}');">
+	<section class="banner banner--overlap banner--swiper js-swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -29,6 +29,7 @@
 {% endblock %}
 
 {% block content %}
+	<!-- <pre>{{ dump() }}</pre> -->
     <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
         <h1 class="portfolio__h1">{{post.title}}</h1>
 		{{post.content}}
