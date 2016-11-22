@@ -1,6 +1,4 @@
 <article class="excerpt excerpt-{{post.post_type}}" id="excerpt-{{post.ID}}">
-	<a href="{{post.link}}" class="excerpt__block-link">
-		{% block content %}
-		{% endblock %}
-	</a>
+	{% block content %}
+	{% endblock %}
 </article>

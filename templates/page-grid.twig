@@ -1,1 +1,11 @@
 {% extends "base.twig" %}
+
+{% block content %}
+    {% for project in projects %}
+        {% include ['excerpt-project.twig', 'excerpt.twig'] %}
+    {% endfor %}
+
+    <pre>
+        {{ dump(projects) }}
+    </pre>
+{% endblock %}

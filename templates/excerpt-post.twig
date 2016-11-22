@@ -1,17 +1,19 @@
 {% extends "excerpt.twig" %}
 
 {% block content %}
-	<div class="excerpt__header" style="background-image:url({{post.thumbnail.src}});">
-		<h4 class="excerpt__date">{{ post.post_date | date("M d, Y")}}</h4>
-		<h2 class="excerpt__title">{{post.title}}</h2>
-	</div>
-	<main class="excerpt__body">
-		<p class="excerpt__text">{{ post.post_excerpt }}</p>
-		<section class="excerpt__meta">
-			{% for item in post.terms %}
-					<span class="excerpt__tag"><b>#</b>{{item.title}}  </span>
-			{% endfor %}
-		</section>
-		<div class="excerpt__link" href="{{post.link}}">Read More</div>
-	</main>
+	<a href="{{post.link}}" class="excerpt__block-link">
+		<div class="excerpt__header" style="background-image:url({{post.thumbnail.src}});">
+			<h4 class="excerpt__date">{{ post.post_date | date("M d, Y")}}</h4>
+			<h2 class="excerpt__title">{{post.title}}</h2>
+		</div>
+		<main class="excerpt__body">
+			<p class="excerpt__text">{{ post.post_excerpt }}</p>
+			<section class="excerpt__meta">
+				{% for item in post.terms %}
+						<span class="excerpt__tag"><b>#</b>{{item.title}}  </span>
+				{% endfor %}
+			</section>
+			<span class="excerpt__link">Read More</span>
+		</main>
+	</a>
 {% endblock %}
