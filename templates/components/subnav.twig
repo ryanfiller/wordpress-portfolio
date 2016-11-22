@@ -1,16 +1,15 @@
-{% if menu %}
+{% if page_children %}
     <ul class="subnav grid">
-        <li class="subnav__link"><a href="#">link</a></li>
-        <li class="subnav__link"><a href="#">link</a></li>
-        <li class="subnav__link"><a style="background-color:#3f7cac;" href="#">link</a></li>
-        <li class="subnav__link"><a href="#">link</a></li>
-        {% for item in menu %}
-            {% include "components/menu.twig" with {'menu': item.get_children} %}
-            {% if item.get_children %}
-                {% for child in item.get_children %}
-                    <li class="subnav__link"><a href="{{child.get_link}}">{{child.title}}</a></li>
-                {% endfor %}
-            {% endif %}
+        {% for item in page_children %}
+            <li class="subnav__link"><a href="{{ TimberPost(item.ID).link }}">{{item.post_title}}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if terms %}
+    <ul class="subnav grid">
+        {% for term in terms %}
+            <li class="subnav__link"><a href="{{ term.slug }}">{{term.name}}</a></li>
         {% endfor %}
     </ul>
 {% endif %}

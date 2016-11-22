@@ -20,8 +20,15 @@
  * @subpackage  Timber
  * @since    Timber 0.1
  */
+ // Set up the objects needed
+ $my_wp_query = new WP_Query();
+ $all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+
 
 $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
+// Filter through all pages and find Portfolio's children
+$page_children = get_page_children( $post->ID, $all_wp_pages );
+$context['page_children'] = $page_children;
 Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $context );
