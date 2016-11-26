@@ -6,17 +6,7 @@ $banner-padding: 4em;
     padding-top: $banner-padding;
     padding-bottom: $banner-padding;
 
-    box-shadow: inset 0px 25px 25px -15px rgba(0, 255, 0, .15),
-                inset 0px 50px 25px -15px rgba(225, 0, 0, .10),
-
-                inset 0px -25px 25px -15px rgba(255, 0, 0, .15),
-                inset 0px -50px 25px -15px rgba(0, 255, 0, .10),
-
-                inset 25px 0px 25px -15px rgba(255, 255, 0, .15),
-                inset 50px 0px 25px -15px rgba(0, 255, 255, .10),
-
-                inset -25px 0px 25px -15px rgba(0, 255, 255, .15),
-                inset -50px 0px 25px -15px rgba(255, 255, 0, .10);
+    box-shadow: $shadow-inset;
 
     .grid {
         justify-content: center;
@@ -31,17 +21,7 @@ $banner-padding: 4em;
 
 .banner--overlay {
     position: relative;
-
-    &::before {
-        content: '';
-        display: block;
-        background-color: transparentize($dark-gray, .75);
-        background-image: url('images/screendoor.png');
-        opacity: .5;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        z-index: 1;
-    }
+    @include image-overlay;
 }
 
 .banner--overlap {

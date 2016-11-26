@@ -1,15 +1,15 @@
 {% extends "excerpt.twig" %}
 
 {% block content %}
-    <a href="{{post.link}}" class="excerpt__block-link">
-    	<div class="excerpt__header" style="background-image:url({{project.thumbnail.src}});">
+    <a href="{{ TimberPost(project.ID).link }}" class="project-grid-block" style="background-image:url({{project.thumbnail.src}});">
+    	<div class="project-grid-block__info" >
     		<h2 class="excerpt__title">{{project.title}}</h2>
             <section class="excerpt__meta">
     			{% for item in project.terms %}
     					<span class="excerpt__tag"><b>#</b>{{item.title}}  </span>
     			{% endfor %}
     		</section>
-            <a class="excerpt__link" href="{{ TimberPost(project.ID).link }}">Read More</a>
+            <span class="excerpt__link">Read More</span>
     	</div>
     </a>
 {% endblock %}

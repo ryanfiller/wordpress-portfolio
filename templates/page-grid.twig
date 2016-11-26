@@ -1,11 +1,10 @@
 {% extends "base.twig" %}
-
 {% block content %}
+    <!-- <article class="grid grid--container post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            {{post.content}}
+    </article> -->
+
     {% for project in projects %}
         {% include ['excerpt-project.twig', 'excerpt.twig'] %}
     {% endfor %}
-
-    <pre>
-        {{ dump(projects) }}
-    </pre>
 {% endblock %}

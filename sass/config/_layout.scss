@@ -20,7 +20,7 @@ body {
 }
 
 $container-width: 80vw;
-$spacing: 1.5em;
+$spacing: 3vw;
 
 @mixin container() {
     max-width: $container-width;
@@ -36,6 +36,8 @@ $spacing: 1.5em;
 
 @mixin grid() {
     display: flex;
+    padding-left: $spacing;
+    padding-right: $spacing;
 }
 
 @mixin grid--container() {
@@ -43,9 +45,7 @@ $spacing: 1.5em;
 }
 
 .grid {
-    display: flex;
-    padding-left: $spacing;
-    padding-right: $spacing;
+    @include grid;
 }
 
 .grid--container {
