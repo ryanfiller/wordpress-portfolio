@@ -2,11 +2,13 @@
 
 @mixin grid-page-active {
     @include image-overlay;
-    background-color: transparentize($secondary-color, 1);
+
     .project-grid-block__info {
-        top: 0; bottom: 0; left: 0; right: 0;
-        opacity: 1;
-        box-shadow: $shadow-inset;
+        max-height: 100%;
+
+        .excerpt__title, .excerpt__meta, .excerpt__link {
+            display: block;
+        }
     }
 }
 
@@ -30,9 +32,13 @@
                 position: relative;
 
                 .project-grid-block__info {
+                    text-shadow: $shadow;
                     position: absolute;
-                    top: -15px; bottom: -15px; left: -15px; right: -15px;
-                    opacity: 0;
+                    width: 100%;
+                    padding: 0 5%;
+                    height: 100%;
+                    max-height: 33%;
+                    bottom: 0;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -46,9 +52,12 @@
 
                 .excerpt__title {
                     color: $white;
+                    text-align: center;
+                    margin-bottom: $spacing;
                 }
 
                 .excerpt__meta {
+                    display: none;
                     .excerpt__tag {
                         color: $white;
                     }
@@ -56,6 +65,7 @@
                 }
 
                 .excerpt__link {
+                    display: none;
                     color: $white;
                     font-size: 1.125em;
 
