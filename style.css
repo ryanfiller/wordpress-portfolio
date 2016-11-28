@@ -2,6 +2,7 @@
 /* Globals */
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=VT323");
 * {
   box-sizing: border-box; }
 
@@ -850,3 +851,174 @@ body {
     @media only screen and (max-width: 768px) {
       .homepage .homepage__logo {
         width: 50vw; } }
+
+body.error404 {
+  font-family: 'VT323', monospace;
+  color: white; }
+  body.error404 .header {
+    border-bottom: 0; }
+  body.error404 .page-content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body.error404 .page-content .body--404 {
+      background-image: url("https://media.giphy.com/media/NGALQBUgvmVTa/giphy.gif");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: inset 0px 25px 25px -15px rgba(0, 255, 0, 0.15), inset 0px 50px 25px -15px rgba(225, 0, 0, 0.1), inset 0px -25px 25px -15px rgba(255, 0, 0, 0.15), inset 0px -50px 25px -15px rgba(0, 255, 0, 0.1), inset 25px 0px 25px -15px rgba(255, 255, 0, 0.15), inset 50px 0px 25px -15px rgba(0, 255, 255, 0.1), inset -25px 0px 25px -15px rgba(0, 255, 255, 0.15), inset -50px 0px 25px -15px rgba(255, 255, 0, 0.1);
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      body.error404 .page-content .body--404::before {
+        content: '';
+        display: block;
+        background-color: rgba(30, 34, 35, 0.25);
+        background-image: url("images/screendoor.png");
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-position: center center; }
+      body.error404 .page-content .body--404 .message--404 {
+        text-shadow: 0px 10px 15px rgba(0, 255, 0, 0.15), 0px 20px 15px rgba(225, 0, 0, 0.1), 0px -10px 15px rgba(255, 0, 0, 0.15), 0px -20px 15px rgba(0, 255, 0, 0.1), 10px 0px 15px rgba(255, 255, 0, 0.15), 20px 0px 15px rgba(0, 255, 255, 0.1), -10px 0px 15px rgba(0, 255, 255, 0.15), -20px 0px 15px rgba(255, 255, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        text-align: center;
+        font-size: 3em;
+        position: relative;
+        z-index: 10; }
+        body.error404 .page-content .body--404 .message--404__code {
+          display: block;
+          font-size: 1.5em; }
+      body.error404 .page-content .body--404 .menu--404 {
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+        padding: 1.5vw;
+        padding-top: 3vw;
+        margin: 3vw;
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        body.error404 .page-content .body--404 .menu--404__link {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          list-style: none;
+          box-sizing: border-box;
+          padding: 0 3vw 3vw 0;
+          position: relative;
+          z-index: 10;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          body.error404 .page-content .body--404 .menu--404__link a {
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            text-shadow: -3px 3px black;
+            font-size: 2em;
+            padding-left: 6vw; }
+            body.error404 .page-content .body--404 .menu--404__link a:hover {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              body.error404 .page-content .body--404 .menu--404__link a:hover::before {
+                content: '';
+                display: block;
+                background-image: url("images/404/ff_pointer.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                -ms-interpolation-mode: nearest-neighbor;
+                    image-rendering: -webkit-optimize-contrast;
+                    image-rendering: -moz-crisp-edges;
+                    image-rendering: pixelated;
+                height: 4.5vw;
+                width: 4.5vw;
+                position: absolute;
+                left: 1vw; }
+
+.menu--404 {
+  background: blue;
+  border-radius: 3vw;
+  border: 0.3vw solid blue; }
+
+.border .corner {
+  display: block;
+  height: 1.5vw;
+  width: 1.5vw;
+  position: absolute;
+  background-image: url("images/404/pixelcorners.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .border .corner:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .border .corner:nth-of-type(2) {
+    top: 0;
+    right: 0; }
+  .border .corner:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .border .corner:nth-of-type(4) {
+    bottom: 0;
+    left: 0; }
+
+.border .vertical {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: -0.75vw;
+  right: -0.75vw;
+  top: 1.5vw;
+  bottom: 1.5vw;
+  border-left: 0.75vw solid white;
+  border-right: 0.75vw solid white;
+  height: calc(100% - $spacing/2);
+  width: calc(100% + $spacing/2); }
+
+.border .horizontal {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 1.5vw;
+  right: 1.5vw;
+  top: -0.75vw;
+  bottom: -0.75vw;
+  border-top: 0.75vw solid white;
+  border-bottom: 0.75vw solid white;
+  height: calc(100% + $spacing/2);
+  width: calc(100% - $spacing/2); }

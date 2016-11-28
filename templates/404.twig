@@ -1,5 +1,49 @@
 {% extends "base.twig" %}
 
+{% block header %}
+	<header class="header">
+		<div class="header--pre">
+			{% include "components/socials.twig" %}
+		</div>
+	</header>
+{% endblock %}
+
+{% block banner %}
+{% endblock %}
+
+{% block grid %}
+{% endblock %}
+
 {% block content %}
-	Sorry, we couldn't find what you're looking for.
+	<main class="body--404">
+		<h1 class="message--404">
+			<span class="message--404__code">Error: 404.</span>
+			The page you were looking for was not found.
+		</h1>
+		<ul class="menu--404">
+			<li class="menu--404__link"><a href="#">link</a></li>
+			<li class="menu--404__link"><a href="#">link</a></li>
+			<li class="menu--404__link"><a href="#">link</a></li>
+			<div class="border">
+				<div class="corner"></div>
+				<div class="corner"></div>
+				<div class="corner"></div>
+				<div class="corner"></div>
+				<div class="vertical"></div>
+				<div class="horizontal"></div>
+			</div>
+		</ul>
+	</main>
+{% endblock %}
+
+{% block footer %}
+<footer class="footer">
+    <aside class="footer--post">
+        <div class="grid grid--container">
+            <span class="footer__legal">
+                Copyright 2012 - {{"now"|date('Y')}}
+            </span>
+        </div>
+    </aside>
+</footer>
 {% endblock %}
