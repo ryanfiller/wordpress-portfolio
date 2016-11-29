@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
+$border: 10px;
+$border-color: #fffbff;
+$border-shadow: #6b7173;
+
+$color: #6b6bc6;
+$stops: 20;
+$percentage: 100% / $stops;
+$gradient: darken($color, 0) 0%, darken($color, 0) $percentage;
+
+@for $i from 1 through $stops {
+    $currentPercentage: $percentage * $i;
+    $nextPercentage: $percentage*($i+1);
+    $darken: darken($color, $currentPercentage/2);
+    $gradient: $gradient, $darken $currentPercentage, $darken $nextPercentage;
+}
+
 body.error404 {
     font-family: 'VT323', monospace;
     color: white;
+
     .header {
         border-bottom: 0;
     }
+
     .page-content {
         padding: 0;
         display: flex;
@@ -16,7 +34,7 @@ body.error404 {
             background-repeat: no-repeat;
             background-size: cover;
             @include image-overlay;
-            box-shadow: $shadow-inset;
+            // box-shadow: $shadow-inset;
             flex: 1;
             display: flex;
             justify-content: center;
@@ -57,7 +75,7 @@ body.error404 {
                     position: relative;
                     z-index: 10;
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
 
                     a {
                         position: relative;
@@ -66,7 +84,7 @@ body.error404 {
                         text-decoration: none;
                         color: white;
                         text-shadow: -3px 3px black;
-                        font-size: 2em;
+                        font-size: 2.5em;
                         padding-left: 2*$spacing;
 
                         &:hover {
@@ -81,12 +99,20 @@ body.error404 {
                                 background-repeat: no-repeat;
                                 background-position: center center;
                                 image-rendering: pixelated;
-                                height: 1.5*$spacing;
-                                width: 1.5*$spacing;
+                                height: 1.25*$spacing;
+                                width: 1.25*$spacing;
                                 position: absolute;
-                                left: $spacing/3;
+                                left: $spacing/2;
                             }
                         }
+                    }
+                }
+
+                @include tablet-break {
+                    display: block;
+
+                    &__link {
+                        padding: 0 2*$spacing 2*$spacing 0;
                     }
                 }
             }
@@ -94,80 +120,59 @@ body.error404 {
     }
 }
 
-// @for $i from 1 through 9 {
-//     $percentDarken: (($i * 10)+10);
-//     .mobile-nav--level-#{$i} .mobile-nav__selector-wrap.active {
-//         background: darken($tertiary-color, $percentDarken);
-//     }
-// }
-//
 .menu--404 {
-    background: blue;
-    // background: linear-gradient(
-    //     0deg,
-    //     #00005a 33.33%, white 33.33%,
-    //     white 66.66%, #6b69c6 66.66%
-    // );
-    // border: $spacing/6 solid white;
+    background-image:
+        linear-gradient(
+            $gradient
+        );
+        box-shadow: inset 0px 0px 0px $border/2 $border-shadow;
 
-    border-radius: $spacing;
-    border: $spacing/10 solid blue;
-}
-
-.border {
     .corner {
         display: block;
-        height: $spacing/2;
-        width: $spacing/2;
+        height: $border;
+        width: $border;
         position: absolute;
-        background-image: url("images/404/pixelcorners.svg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+        background-color: $border-color;
+        box-shadow: $border/2 $border/2 $border-shadow;
 
         &:nth-of-type(1) {
             top: 0;
             left: 0;
-            transform: rotate(90deg);
         }
         &:nth-of-type(2) {
             top: 0;
             right: 0;
+            transform: rotate(90deg);
         }
         &:nth-of-type(3) {
             bottom: 0;
             right: 0;
-            transform: rotate(90deg);
+            transform: rotate(180deg);
         }
         &:nth-of-type(4) {
             bottom: 0;
             left: 0;
+            transform: rotate(270deg);
         }
     }
+
     .vertical {
-        display: block;
-        box-sizing: border-box;
         position: absolute;
-        left: -$spacing/4;
-        right: -$spacing/4;
-        top: $spacing/2;
-        bottom: $spacing/2;
-        border-left: $spacing/4 solid white;
-        border-right: $spacing/4 solid white;
-        height: calc(100% - $spacing/2);
-        width: calc(100% + $spacing/2);
+        top: $border;
+        bottom: $border;
+        left: -$border;
+        right: -$border;
+        border-left: $border solid $border-color;
+        border-right: $border solid $border-color;
     }
+
     .horizontal {
-        display: block;
-        box-sizing: border-box;
         position: absolute;
-        left: $spacing/2;
-        right: $spacing/2;
-        top: -$spacing/4;
-        bottom: -$spacing/4;
-        border-top: $spacing/4 solid white;
-        border-bottom: $spacing/4 solid white;
-        height: calc(100% + $spacing/2);
-        width: calc(100% - $spacing/2);
+        top: -$border;
+        bottom: -$border;
+        left: $border;
+        right: $border;
+        border-top: $border solid $border-color;
+        border-bottom: $border solid $border-color;
     }
 }
